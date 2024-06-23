@@ -4,8 +4,8 @@
             class="w-full h-full flex flex-row items-center justify-between py-4 px-16"
         >
             <div>Logo Here</div>
-            <ul class="flex flex-row space-x-4">
-                <li><NavAnchor href="/home">home</NavAnchor></li>
+            <ul class="flex flex-row space-x-2">
+                <li><NavAnchor href="/">home</NavAnchor></li>
                 <li><NavAnchor href="/blog">blog</NavAnchor></li>
                 <li>
                     <NavAnchor href="/projects">projects</NavAnchor>
