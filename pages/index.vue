@@ -1,0 +1,5 @@
+<template>Hello Page</template>
+
+<script lang="ts" setup></script>
+
+<style></style>
