@@ -1,5 +1,5 @@
 <template>
-    <div><MdCodeBlock lang="python">print("Hello World")</MdCodeBlock></div>
+    <div><ProsePre lang="python">print("Hello World")</ProsePre></div>
 </template>
 
 <script lang="ts" setup></script>
