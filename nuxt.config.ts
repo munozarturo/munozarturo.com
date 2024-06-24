@@ -1,8 +1,18 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
     devtools: { enabled: true },
-    components: {
-        dirs: ["~/components", { path: "~/components/global", global: true }],
+
+    content: {
+        highlight: {
+            theme: "monokai",
+            langs: ["python", "typescript", "javascript", "rust", "bash"],
+        },
     },
-    modules: ["@nuxtjs/tailwindcss"],
+    components: [
+        {
+            path: "~/components",
+            pathPrefix: false,
+        },
+    ],
+    modules: ["@nuxtjs/tailwindcss", "@nuxt/content", "@nuxt/image"],
 });
