@@ -1,4 +1,4 @@
-<template>{{ route.path }}</template>
+<template></template>
 
 <script lang="ts" setup>
 const route = useRoute();
