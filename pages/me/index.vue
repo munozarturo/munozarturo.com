@@ -1,5 +1,7 @@
 <template>
-    <div></div>
+    <div>
+        <MdA></MdA>
+    </div>
 </template>
 
 <script lang="ts" setup></script>

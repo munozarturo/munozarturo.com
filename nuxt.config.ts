@@ -32,8 +32,14 @@ export default defineNuxtConfig({
             },
         },
     },
+    vue: {
+        compilerOptions: {
+            isCustomElement: (tag) => tag.startsWith("md-"),
+        },
+    },
     components: {
-        dirs: ["~/components", { path: "~/components/global", global: true }],
+        global: true,
+        dirs: ["~/components", "~/components/md"],
     },
     modules: ["@nuxtjs/tailwindcss", "@nuxt/content", "@nuxt/image"],
 });
