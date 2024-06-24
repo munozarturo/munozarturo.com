@@ -6,7 +6,9 @@
             <p class="font-bold text-secondary">{{ language }}</p>
             <button class="font-bold text-secondary">copy</button>
         </div>
-        <pre class="w-full h-fit font-mono p-2 rounded-b-md border"><slot
+        <pre
+            class="w-full h-fit font-mono p-2 rounded-b-md border overflow-x-auto"
+        ><slot
         /></pre>
     </div>
 </template>

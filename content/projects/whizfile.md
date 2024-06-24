@@ -1,5 +1,5 @@
 ---
-title: "whzifile.com"
+title: "whizfile"
 subtitle: "a fully fledged file transfer service built in Next.js with AWS S3 and MongoDB in the back-end."
 date: "11:03 aug. 23rd 2021"
 tags: ["typescript", "mongodb", "aws-s3"]
