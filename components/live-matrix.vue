@@ -27,7 +27,7 @@ const squares = ref(
 );
 
 const changeColors = () => {
-    if (iters.value == 7) {
+    if (iters.value == 3) {
         iters.value = 0;
         return (squares.value = [
             1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0,
