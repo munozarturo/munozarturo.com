@@ -64,9 +64,15 @@ export default defineNuxtConfig({
                 ].includes(tag),
         },
     },
-    components: {
-        global: true,
-        dirs: ["~/components", { path: "~/components/md", pathPrefix: "md" }],
-    },
+    components: [
+        {
+            path: "~/components",
+            pathPrefix: false,
+        },
+        {
+            path: "~/components/md",
+            pathPrefix: false,
+        },
+    ],
     modules: ["@nuxtjs/tailwindcss", "@nuxt/content", "@nuxt/image"],
 });
