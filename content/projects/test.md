@@ -26,10 +26,7 @@ Here's a list of fruits:
 - Bananas
 - Cherries
 
-And a numbered list of steps:
-
-1. First, do this.
-2. Then, do that.
+And a numbered list of steps:<ProsePre lang="python">print("Hello World")</ProsePre>
 3. Finally, do this.
 
 Here's some `inline code`.

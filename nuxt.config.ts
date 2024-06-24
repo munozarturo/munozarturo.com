@@ -2,9 +2,10 @@
 export default defineNuxtConfig({
     devtools: { enabled: true },
 
-    vue: {
-        compilerOptions: {
-            isCustomElement: (tag) => ["md-a"].includes(tag),
+    content: {
+        highlight: {
+            theme: "monokai",
+            langs: ["python", "typescript", "javascript", "rust", "bash"],
         },
     },
     components: [

@@ -1,5 +1,5 @@
 <template>
-    <div><ProsePre lang="python">print("Hello World")</ProsePre></div>
+    <div></div>
 </template>
 
 <script lang="ts" setup></script>
