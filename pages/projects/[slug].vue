@@ -1,6 +1,6 @@
 <template>
     <article v-if="page" class="w-1/2 pt-8">
-        <h1>{{ page.title }}</h1>
+        <ProseH1>{{ page.title }}</ProseH1>
         <ContentRenderer :value="page">
             <template #empty>
                 <p>No content found.</p>
