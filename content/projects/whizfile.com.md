@@ -1,6 +1,6 @@
 ---
 title: "whzifile.com"
-subtitle: "a fully fledges file transfer service built in Next.js with AWS S3 and MongoDB in the back-end."
+subtitle: "a fully fledged file transfer service built in Next.js with AWS S3 and MongoDB in the back-end."
 date: "11:03 aug. 23rd 2021"
 tags: ["typescript", "mongodb", "aws-s3"]
 links: [
@@ -16,7 +16,6 @@ links: [
 ---
 
 Whizfile.com is a file transfer service that offers a user-friendly platform for sending files. The website allows users to easily add files for transfer by either clicking or using a drag-and-drop interface. Users can include a title and a message with their file transfer, indicating a focus on simplicity and convenience in file sharing.
-<!--more-->
 
 ![whizfile-banner](/images/whizfile-banner.png)
 
