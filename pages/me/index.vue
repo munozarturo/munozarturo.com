@@ -1,5 +1,7 @@
 <template>
-    <div>{{ route.fullPath }}</div>
+    <div>
+        <Icon name="export" class="h-6" />
+    </div>
 </template>
 
 <script lang="ts" setup>
