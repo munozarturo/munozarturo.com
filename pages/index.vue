@@ -8,9 +8,9 @@
         <div class="text-2xl pl-2">
             My name is Arturo Muñoz, I am a college student completing my
             Bachelor's Degree in Computer Science and this is a digital catalog
-            of <Anchor href="/me">me</Anchor>, my
-            <Anchor href="/blog">thoughts</Anchor> and my
-            <Anchor href="/projects">projects</Anchor>.
+            of <a href="/me" class="font-semibold underline">me</a>, my
+            <a href="/blog" class="font-semibold underline">thoughts</a> and my
+            <a href="/projects" class="font-semibold underline">projects</a>.
         </div>
     </div>
 </template>
