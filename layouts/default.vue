@@ -1,5 +1,5 @@
 <template>
-    <div class="min-h-screen flex flex-col bg-background text-primary">
+    <div class="min-h-screen flex flex-col bg-secondary text-primary">
         <Navbar />
         <main class="w-full h-full flex items-center justify-center">
             <slot />
