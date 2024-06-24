@@ -4,5 +4,5 @@ export default defineNuxtConfig({
     components: {
         dirs: ["~/components", { path: "~/components/global", global: true }],
     },
-    modules: ["@nuxtjs/tailwindcss"],
+    modules: ["@nuxtjs/tailwindcss", "@nuxt/content"],
 });
