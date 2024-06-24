@@ -1,7 +1,7 @@
 <template>
     <a
         v-bind="$attrs"
-        class="font-bold text-lg rounded-md transition-colors duration-300 ease-in-out hover:bg-primary hover:text-background py-1 px-2"
+        class="font-semibold text-lg rounded-md transition-colors duration-300 ease-in-out hover:bg-primary hover:text-background py-1 px-2"
         :class="{ 'bg-primary text-background': isActive }"
         :href="href"
     >

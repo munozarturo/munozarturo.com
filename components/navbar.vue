@@ -3,8 +3,8 @@
         <nav
             class="w-full h-full flex flex-row items-center justify-between py-4 px-16"
         >
-            <div>Logo Here</div>
-            <ul class="flex flex-row space-x-2">
+            <div class="text-xl font-bold"><a href="/">@munozarturo</a></div>
+            <ul class="flex flex-row space-x-2 overflow-visible">
                 <li><NavAnchor href="/">home</NavAnchor></li>
                 <li><NavAnchor href="/blog">blog</NavAnchor></li>
                 <li>

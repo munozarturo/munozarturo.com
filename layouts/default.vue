@@ -1,10 +1,8 @@
 <template>
-    <div class="w-full min-h-screen bg-background text-primary">
+    <div class="min-h-screen flex flex-col bg-background text-primary">
         <Navbar />
-        <slot />
+        <main class="w-full h-full flex items-center justify-center pt-12">
+            <slot />
+        </main>
     </div>
 </template>
-
-<script lang="ts" setup></script>
-
-<style></style>
