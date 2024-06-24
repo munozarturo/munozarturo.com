@@ -1,5 +1,5 @@
 <template>
-    <div><MdA href="/hello">Hello Anchor</MdA></div>
+    <div><MdCodeBlock lang="python">print("Hello World")</MdCodeBlock></div>
 </template>
 
 <script lang="ts" setup></script>
