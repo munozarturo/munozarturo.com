@@ -1,5 +1,5 @@
 <template>
-    <article v-if="page">
+    <article v-if="page" class="w-3/5 pt-8">
         <h1>{{ page.title }}</h1>
         <ContentRenderer :value="page">
             <template #empty>
