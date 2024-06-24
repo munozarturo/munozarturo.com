@@ -1,4 +1,6 @@
-# Main Heading (H1)
+---
+title: Main Heading (H1)
+---
 
 ## Second Level Heading (H2)
 

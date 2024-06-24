@@ -1,5 +1,5 @@
 <template>
-    <div><slot /></div>
+    <li class="mb-2"><slot /></li>
 </template>
 
 <script setup lang="ts"></script>
