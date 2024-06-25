@@ -14,6 +14,7 @@ export default defineNuxtConfig({
             pathPrefix: false,
         },
     ],
+    css: ["~/assets/css/scrollbar.css"],
     modules: [
         "@nuxtjs/tailwindcss",
         "@nuxt/content",
