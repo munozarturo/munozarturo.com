@@ -3,9 +3,11 @@
         <div
             class="w-full h-fit flex flex-row justify-between px-2 py-1 bg-primary rounded-t-md"
         >
-            <p class="font-bold text-secondary">{{ language }}</p>
-            <button class="font-bold text-secondary stroke-current">
-                <Icon name="copy" class="w-full h-full" />
+            <p class="font-bold text-secondary">
+                {{ language }}
+            </p>
+            <button class="font-bold text-secondary">
+                <Icon name="copy" class="w-full h-full stroke-current" />
             </button>
         </div>
         <pre
