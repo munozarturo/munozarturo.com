@@ -6,7 +6,7 @@
             <p class="font-bold text-secondary">
                 {{ language }}
             </p>
-            <button class="font-bold text-secondary">
+            <button class="font-bold text-secondary" @click="copy">
                 <Icon name="copy" class="w-full h-full stroke-current" />
             </button>
         </div>
@@ -24,4 +24,10 @@ defineProps({
         default: null,
     },
 });
+
+const toaster = useToasterStore();
+
+function copy(): void {
+    toaster.addMessage("Copied to clipboard!", "success");
+}
 </script>

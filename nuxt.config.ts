@@ -14,5 +14,10 @@ export default defineNuxtConfig({
             pathPrefix: false,
         },
     ],
-    modules: ["@nuxtjs/tailwindcss", "@nuxt/content", "@nuxt/image"],
+    modules: [
+        "@nuxtjs/tailwindcss",
+        "@nuxt/content",
+        "@nuxt/image",
+        "@pinia/nuxt",
+    ],
 });

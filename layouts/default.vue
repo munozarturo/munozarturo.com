@@ -4,5 +4,6 @@
         <main class="w-full h-full flex items-center justify-center">
             <slot />
         </main>
+        <Toaster />
     </div>
 </template>
