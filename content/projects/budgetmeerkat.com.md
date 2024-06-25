@@ -1,18 +1,18 @@
 ---
-title: "meerkatbudget.com"
-subtitle: "budgeting web app."
+title: "budgetmeerkat.com"
+subtitle: "a simple budgeting web app."
 date: "17:54 aug. 9th 2024"
-tags: ["nuxt-js", "vue", "postgresql", "aws-ses", "typescript", "plaid"]
+tags: ["nuxt-js", "vue", "postgresql", "aws-ses", "typescript", "plaid", "stripe"]
 links: [
     {
         "icon": "globe",
-        "href": "https://meerkatbudget.com/",
+        "href": "https://budgetmeerkat.com/",
     },
     {
         "icon": "github",
-        "href": "https://github.com/munozarturo/meerkatbudget.com",
+        "href": "https://github.com/munozarturo/budgetmeerkat.com",
     },
 ]
 ---
 
-![meerkatbudget-banner](/content/images/meerkatbudget-banner.png)
+![budgetmeerkat-banner](/content/images/budgetmeerkat-banner.png)
