@@ -1,5 +1,7 @@
 <template>
     <article v-if="page" class="w-1/2 pt-8">
+        <TableOfContents :page="page" />
+
         <ArticleHead :page="page" />
         <ContentRenderer :value="page" class="space-y-8 pb-16">
             <template #empty>
