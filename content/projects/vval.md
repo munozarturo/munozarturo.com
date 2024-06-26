@@ -15,4 +15,4 @@ links: [
 ]
 ---
 
-`vval`.
+![vval-banner](/content/images/vval-banner.png)

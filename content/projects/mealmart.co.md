@@ -2,7 +2,7 @@
 title: "mealmart.co"
 subtitle: "a marketplace for college students to buy and sell meal swipes."
 date: "16:47 aug. 17th 2024"
-tags: [""]
+tags: ["nuxt-js", "vue", "postgresql", "typescript", "stripe"]
 links: [
     {
         "icon": "globe",
