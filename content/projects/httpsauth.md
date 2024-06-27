@@ -1,6 +1,6 @@
 ---
 title: "httpsauth"
-subtitle: "authentication over HTTP from scratch."
+subtitle: "cookie Authentication over HTTPS in Nuxt3 with PostgreSQL and AWS SES."
 date: "12:28 jun. 25th 2024"
 tags: ["nuxt-js", "vue", "postgresql", "aws-ses", "typescript"]
 links: [

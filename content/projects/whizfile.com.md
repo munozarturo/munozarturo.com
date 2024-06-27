@@ -1,6 +1,6 @@
 ---
 title: "whizfile.com"
-subtitle: "a file transfer service built in Next.js with AWS S3 and MongoDB."
+subtitle: "a simple file transfer service built in NextJS 14 with AWS S3 and MongoDB."
 date: "11:03 aug. 23rd 2023"
 tags: ["next-js", "react", "mongodb", "aws-s3", "typescript"]
 links: [

@@ -1,8 +1,8 @@
 ---
 title: "mockupforge"
-subtitle: "a containerized mockup generator."
+subtitle: "a containerized mockup generator running Flask and GIMP."
 date: "6:15 may 14th 2024"
-tags: ["docker", "python", "flask", "gimp"]
+tags: ["docker", "python3", "flask", "gimp"]
 links: [
     {
         "icon": "globe",
