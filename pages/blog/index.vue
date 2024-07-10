@@ -5,7 +5,7 @@
         >
             i'm still working on this bit.
         </h1>
-        <div class="text-2xl pl-2">hopefully i'm done soon.</div>
+        <div class="text-2xl pl-2">hopefully i'll be done soon.</div>
     </div>
 </template>
 
