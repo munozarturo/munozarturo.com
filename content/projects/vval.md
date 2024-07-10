@@ -1,7 +1,7 @@
 ---
 title: "vval"
 subtitle: "a python module for input validation."
-date: "15:58 nov. 16th 2023"
+date: "2023-11-16T15:58:00"
 tags: ["python3"]
 links: [
     {

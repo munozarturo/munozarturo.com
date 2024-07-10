@@ -2,7 +2,7 @@
     <div class="flex flex-col space-y-4">
         <div class="flex flex-row justify-between text-md">
             <span
-                >{{ page.date }} &centerdot;
+                >{{ formatDate(new Date(page.date)) }} &centerdot;
                 {{ estimateReadingTime(page.body) }} min read</span
             >
             <div class="flex flex-row space-x-2">
