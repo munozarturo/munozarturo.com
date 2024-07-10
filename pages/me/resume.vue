@@ -4,7 +4,9 @@
     >
         <div class="w-full items-center justify-end flex flex-row space-x-2">
             <div class="w-full flex flex-row justify-between text-md">
-                <span>{{ formatDate(new Date(resume.date)) }}</span>
+                <span>{{
+                    formatDate(new Date(resume.date)).toLowerCase()
+                }}</span>
                 <div class="flex flex-row space-x-2">
                     <button @click="share"><Icon name="share" /></button>
                     <a
