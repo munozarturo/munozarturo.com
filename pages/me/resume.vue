@@ -8,7 +8,7 @@
                 <div class="flex flex-row space-x-2">
                     <button @click="share"><Icon name="share" /></button>
                     <a
-                        href="/assets/files/resume.pdf"
+                        href="/files/resume.pdf"
                         :download="`Arturo_Munoz_Resume_${new Date(
                             resume.date
                         ).toLocaleString('default', {
