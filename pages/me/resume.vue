@@ -9,7 +9,10 @@
                 }}</span>
                 <div class="flex flex-row space-x-2">
                     <button @click="share"><Icon name="share" /></button>
-                    <a href="/files/munozarturo_resume.pdf">
+                    <a
+                        href="/files/munozarturo_resume.pdf"
+                        download="munozarturo_resume.pdf"
+                    >
                         <Icon name="download" />
                     </a>
                 </div>
