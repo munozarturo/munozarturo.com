@@ -1,5 +1,5 @@
 function formatDate(date: Date): string {
-    const formattedDate = date.toLocaleString("en-US", {
+    const formattedDate = date.toLocaleString("en-GB", {
         hour: "numeric",
         minute: "numeric",
         month: "short",
@@ -24,7 +24,9 @@ function formatDate(date: Date): string {
     };
 
     const day = date.getDate();
-    return formattedDate.replace(/\d+/, `${day}${daySuffix(day)}`);
+    return formattedDate
+        .replace(/\d+/, `${day}${daySuffix(day)}`)
+        .toLowerCase();
 }
 
 export { formatDate };

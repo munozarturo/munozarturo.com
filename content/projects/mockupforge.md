@@ -1,6 +1,6 @@
 ---
 title: "mockupforge"
-subtitle: "a containerized mockup generator running Flask and GIMP."
+subtitle: "a containerized mockup generator built with Flask and GIMP."
 date: "2024-05-14T18:15:00"
 tags: ["docker", "python3", "flask", "gimp"]
 links: [
