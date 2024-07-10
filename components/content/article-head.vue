@@ -21,6 +21,9 @@
 </template>
 
 <script setup lang="ts">
+const url = useRequestURL();
+const toaster = useToasterStore();
+
 const props = defineProps({
     page: {
         type: Object,
@@ -32,7 +35,14 @@ const links = computed(
     () => props.page.links as { icon: string; href: string }[]
 );
 
-const share = () => {};
+function share(): void {
+    try {
+        navigator.clipboard.writeText(url.toString());
+        toaster.addMessage("Link Copied.", "success");
+    } catch (e: any) {
+        toaster.addMessage("Failed to copy.", "error");
+    }
+}
 
 function estimateReadingTime(content: any): number {
     const countWords = (text: string): number => {

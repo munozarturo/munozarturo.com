@@ -3,7 +3,7 @@
         class="w-full px-4 md:w-2/3 md:px-0 lg:w-1/2 flex flex-col space-y-4 pt-8 pb-12"
     >
         <div class="w-full items-center justify-end flex flex-row space-x-2">
-            <button @click=""><Icon name="share" /></button>
+            <button @click="share"><Icon name="share" /></button>
             <button @click=""><Icon name="download" /></button>
         </div>
 
@@ -167,4 +167,16 @@
 
 <script setup lang="ts">
 const resume = await $fetch("/api/resume", { method: "GET" });
+
+const url = useRequestURL();
+const toaster = useToasterStore();
+
+function share(): void {
+    try {
+        navigator.clipboard.writeText(url.toString());
+        toaster.addMessage("Link Copied.", "success");
+    } catch (e: any) {
+        toaster.addMessage("Failed to copy.", "error");
+    }
+}
 </script>
