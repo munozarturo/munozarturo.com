@@ -22,7 +22,7 @@
             </div>
         </div>
         <ClientOnly>
-            <div class="w-full">
+            <div class="w-full space-y-2">
                 <span
                     class="flex flex-row w-full items-center justify-center space-x-4"
                     ><p class="font-bold text-5xl">&ldquo;</p>
