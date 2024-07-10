@@ -47,7 +47,11 @@
 </template>
 
 <script lang="ts" setup>
-const quotes = await $fetch("/api/quotes", { method: "GET" });
+const quotes = (await $fetch("/api/quotes", { method: "GET" })) as unknown as {
+    quote: string;
+    credit: string;
+    footnote: string;
+}[];
 
 const cursor = ref(Math.floor(Math.random() * quotes.length));
 const randomizeCursor = () => {
