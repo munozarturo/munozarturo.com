@@ -1,7 +1,5 @@
 <template>
-    <div
-        class="w-full px-4 md:w-2/3 md:px-0 lg:w-1/2 flex flex-col space-y-4 pt-8 pb-12"
-    >
+    <div class="w-full px-4 max-w-[768px] flex flex-col space-y-4 pt-8 pb-12">
         <div class="w-full items-center justify-end flex flex-row space-x-2">
             <div class="w-full flex flex-row justify-between text-md">
                 <span>{{
