@@ -5,7 +5,9 @@
         <div
             class="w-full flex flex-row space-x-2 items-center justify-between"
         >
-            <button @click="randomizeCursor">
+            <button
+                @click="updateCursor(Math.floor(Math.random() * quotes.length))"
+            >
                 <div class="w-8 h-8">
                     <Icon name="die" class="w-full h-full" />
                 </div>
@@ -54,9 +56,6 @@ const quotes = (await $fetch("/api/quotes", { method: "GET" })) as unknown as {
 }[];
 
 const cursor = ref(Math.floor(Math.random() * quotes.length));
-const randomizeCursor = () => {
-    cursor.value = Math.floor(Math.random() * quotes.length);
-};
 
 const quote = computed(() => quotes[cursor.value]);
 
