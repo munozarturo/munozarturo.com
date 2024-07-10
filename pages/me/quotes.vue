@@ -23,12 +23,13 @@
             <div class="w-full space-y-2">
                 <span
                     class="flex flex-row w-full items-center justify-center space-x-4"
-                    ><p class="font-bold text-5xl">&ldquo;</p>
+                >
+                    <p class="font-bold text-5xl">&ldquo;</p>
                     <p class="text-2xl text-center">{{ quote.quote }}</p>
                     <p class="font-bold text-5xl">&rdquo;</p></span
                 >
-                <span class="flex flex-row items-center justify-between"
-                    ><p class="text-sm text-tertiary">
+                <span class="flex flex-row items-center justify-between">
+                    <p class="text-sm text-tertiary">
                         {{ cursor + 1 }}/{{ quotes.length }}
                     </p>
                     <p v-if="quote.credit" class="text-xl italic font-bold">
@@ -39,8 +40,9 @@
                 <span
                     v-if="quote.footnote"
                     class="w-full flex flex-row items-start justify-end"
-                    ><p>{{ quote.footnote }}</p></span
                 >
+                    <p>{{ quote.footnote }}</p>
+                </span>
             </div>
         </ClientOnly>
     </div>

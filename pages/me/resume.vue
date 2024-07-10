@@ -70,10 +70,10 @@
                         <h3 class="font-bold">{{ exp.company }}</h3>
                         <p class="font-bold">{{ exp.dates }}</p></span
                     >
-                    <span class="flex flex-row justify-between"
-                        ><p class="italic">{{ exp.title }}</p>
-                        <p>{{ exp.location }}</p></span
-                    >
+                    <span class="flex flex-row justify-between">
+                        <p class="italic">{{ exp.title }}</p>
+                        <p>{{ exp.location }}</p>
+                    </span>
                     <ul class="list-disc pl-8">
                         <li v-for="responsibility in exp.responsibilities">
                             {{ responsibility }}
@@ -124,8 +124,8 @@
                         <span
                             class="flex flex-row items-center justify-center space-x-1"
                             ><h2 class="text-xl font-bold">Projects</h2>
-                            <Icon name="export" class="w-4 h-4"
-                        /></span>
+                            <Icon name="export" class="w-4 h-4" />
+                        </span>
                     </a>
                 </div>
                 <hr class="border-t border-tertiary" />
