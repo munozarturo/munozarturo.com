@@ -8,9 +8,7 @@
             <button
                 @click="updateCursor(Math.floor(Math.random() * quotes.length))"
             >
-                <div class="w-8 h-8">
-                    <Icon name="die" class="w-full h-full" />
-                </div>
+                <Icon name="die" class="w-8 h-8" />
             </button>
             <div class="space-x-2">
                 <button @click="updateCursor(-1)">
