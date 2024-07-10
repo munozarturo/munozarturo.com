@@ -3,8 +3,22 @@
         class="w-full px-4 md:w-2/3 md:px-0 lg:w-1/2 flex flex-col space-y-4 pt-8 pb-12"
     >
         <div class="w-full items-center justify-end flex flex-row space-x-2">
-            <button @click="share"><Icon name="share" /></button>
-            <button @click=""><Icon name="download" /></button>
+            <div class="w-full flex flex-row justify-between text-md">
+                <span>{{ formatDate(new Date(resume.date)) }}</span>
+                <div class="flex flex-row space-x-2">
+                    <button @click="share"><Icon name="share" /></button>
+                    <a
+                        href="/assets/files/resume.pdf"
+                        :download="`Arturo_Munoz_Resume_${new Date(
+                            resume.date
+                        ).toLocaleString('default', {
+                            month: 'short',
+                        })}_${new Date(resume.date).getFullYear()}.pdf`"
+                    >
+                        <Icon name="download" />
+                    </a>
+                </div>
+            </div>
         </div>
 
         <div class="flex flex-col space-y-2">

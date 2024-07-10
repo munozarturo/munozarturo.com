@@ -48,6 +48,7 @@ export default defineEventHandler(async (event) => {
     };
 
     type Resume = {
+        date: Date;
         title: string;
         links: ResumeLink[];
         education: EducationItem[];
@@ -58,6 +59,7 @@ export default defineEventHandler(async (event) => {
     };
 
     const resume: Resume = {
+        date: new Date("2024-07-10T13:59:00"),
         title: "Arturo Muñoz",
         links: [
             {
