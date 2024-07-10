@@ -1,6 +1,6 @@
 <template>
     <div
-        class="w-1/3 flex flex-col items-center justify-center pt-48 space-y-6"
+        class="w-2/3 lg:w-1/2 xl:w-1/3 flex flex-col items-center justify-center pt-48 space-y-6"
     >
         <div
             class="w-full flex flex-row space-x-2 items-center justify-between"
