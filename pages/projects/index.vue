@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full px-4 md:w-2/3 md:px-0 lg:w-1/2 flex flex-col py-8">
+    <div class="w-full px-4 max-w-[768px] flex flex-col py-8">
         <ul class="space-y-6">
             <li
                 v-for="project in projects"
