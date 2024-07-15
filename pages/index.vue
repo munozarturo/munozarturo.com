@@ -13,16 +13,16 @@
             <a href="/projects" class="font-semibold underline">projects</a>.
         </div>
         <div
-            class="pl-4 space-x-4 w-full flex flex-row items-center justify-end"
+            class="pl-4 space-x-4 w-full flex flex-row items-center justify-start"
         >
-            <a href="mailto:arm343@case.edu" target="_blank"
-                ><Icon name="envelope" class="w-8 h-8" />
+            <a href="https://github.com/munozarturo" target="_blank"
+                ><Icon name="github" class="w-8 h-8" />
             </a>
             <a href="https://www.linkedin.com/in/arturoomunoz/" target="_blank"
                 ><Icon name="linkedin" class="w-8 h-8" />
             </a>
-            <a href="https://github.com/munozarturo" target="_blank"
-                ><Icon name="github" class="w-8 h-8" />
+            <a href="mailto:arm343@case.edu" target="_blank"
+                ><Icon name="envelope" class="w-8 h-8" />
             </a>
         </div>
     </div>
