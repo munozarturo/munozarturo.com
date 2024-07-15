@@ -1,10 +1,10 @@
 <svg width="235" height="80" viewBox="0 0 235 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="21.5" width="24" height="24" fill="#C9C7B3"/>
-<rect x="133.5" width="24" height="24" fill="#C9C7B3"/>
-<rect x="189.5" width="24" height="24" fill="#C9C7B3"/>
-<rect x="105.5" y="28" width="24" height="24" fill="#C9C7B3"/>
-<rect x="161.5" y="28" width="24" height="24" fill="#C9C7B3"/>
-<rect x="21.5" y="56" width="24" height="24" fill="#C9C7B3"/>
-<rect x="77.5" y="56" width="24" height="24" fill="#C9C7B3"/>
-<rect x="133.5" y="56" width="24" height="24" fill="#C9C7B3"/>
+    <rect x="21.5" width="24" height="24" fill="#C9C7B3" />
+    <rect x="133.5" width="24" height="24" fill="#C9C7B3" />
+    <rect x="189.5" width="24" height="24" fill="#C9C7B3" />
+    <rect x="105.5" y="28" width="24" height="24" fill="#C9C7B3" />
+    <rect x="161.5" y="28" width="24" height="24" fill="#C9C7B3" />
+    <rect x="21.5" y="56" width="24" height="24" fill="#C9C7B3" />
+    <rect x="77.5" y="56" width="24" height="24" fill="#C9C7B3" />
+    <rect x="133.5" y="56" width="24" height="24" fill="#C9C7B3" />
 </svg>
