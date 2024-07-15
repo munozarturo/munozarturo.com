@@ -1,75 +1,12 @@
-# Nuxt 3 Minimal Starter
+<br>
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+<div align="center" style="background-color: #1e1e1e; border-radius: 6px; padding: 20px; max-width: 100%;">
+  <img src="https://www.munozarturo.com/assets/munozarturo/logo.svg" alt="munozarturo" style="width: 100%; height: auto; max-height: 160px; border-radius: 6px; padding-bottom: 10px">
+</div>
 
-## Setup
+<br>
 
-Make sure to install the dependencies:
+<!-- omit from toc -->
+# munozarturo.com
 
-```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+A content first portfolio website built in `Nuxt3`.

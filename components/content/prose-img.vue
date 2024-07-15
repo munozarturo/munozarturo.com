@@ -1,5 +1,5 @@
 <template>
-    <img class="max-w-full h-auto" :src="src" :alt="alt" />
+    <img class="max-w-full h-auto rounded-md" :src="src" :alt="alt" />
 </template>
 
 <script setup lang="ts">
