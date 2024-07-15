@@ -15,4 +15,4 @@ links: [
 ]
 ---
 
-![whizfile-banner](/content/images/whizfile-banner.png)
+![whizfile-banner](/assets/whizfile/banner.png)

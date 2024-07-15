@@ -15,4 +15,4 @@ links: [
 ]
 ---
 
-![mockupforge-banner](/content/images/mockupforge-banner.png)
+![mockupforge-banner](/assets/mockupforge/banner.png)

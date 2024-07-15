@@ -15,4 +15,4 @@ links: [
 ]
 ---
 
-![httpsauth-banner](/content/images/httpsauth-banner.png)
+![httpsauth-banner](/assets/httpsauth/banner.png)

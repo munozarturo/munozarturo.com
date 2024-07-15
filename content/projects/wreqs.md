@@ -15,4 +15,4 @@ links: [
 ]
 ---
 
-![wreqs-banner](/content/images/wreqs-banner.png)
+![wreqs-banner](/assets/wreqs/banner.png)

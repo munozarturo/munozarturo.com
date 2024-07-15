@@ -15,4 +15,4 @@ links: [
 ]
 ---
 
-![mealmart-banner](/content/images/mealmart-banner.png)
+![mealmart-banner](/assets/mealmart/banner.png)

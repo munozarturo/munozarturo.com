@@ -11,4 +11,4 @@ links: [
 ]
 ---
 
-![httpsauth-banner](/content/images/campusflavor-banner.png)
+![campusflavor-banner](/assets/campusflavor/banner.png)

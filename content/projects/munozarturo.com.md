@@ -15,4 +15,4 @@ links: [
 ]
 ---
 
-![munozarturo-banner](/content/images/munozarturo-banner.png)
+![munozarturo-banner](/assets/munozarturo/banner.png)

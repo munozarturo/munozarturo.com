@@ -15,4 +15,4 @@ links: [
 ]
 ---
 
-![vval-banner](/content/images/vval-banner.png)
+![vval-banner](/assets/vval/banner.png)
