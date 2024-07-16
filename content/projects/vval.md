@@ -17,15 +17,15 @@ links: [
 
 ![vval-banner](/assets/vval/banner.png)
 
-This is probably the first "big" project that I worked on. vval was a project inspired by strictly typed languages, the likes of Java and C++, which shaped the early days of my programming.
+This is probably the first &ldquo;big&rdquo; project that I worked on. vval was a project inspired by strictly typed languages, the likes of Java and C++, which shaped the early days of my programming.
 
 Back when I was still learning to code in Python I was very uncomfortable with the dynamically typed nature of the language. This was something that especially unsettled me because I often shared my code with my highschool classmates. My classmates would, shortly after copying it, modify it. They would change the functions, rename the variables, and reformat the functions that I passed along. Which would eventually make the interpreter cry because it didn't know how to use `bytes` as a `list[list[string]]`.
 
 So I did something about it. I wrote a module that would strictly enforce the types of variables by using &ldquo;checker&rdquo; helper functions that would make sure that a variable being passed to a function could only be of types that function was written to handle.
 
-vval saw some success in preventing errors with the code I shared, but I eventually learned that the best way of preventing the problems of sharing my code mostly came down to sub-par code and documentation. I found out that the return on addressing code and documentation quality was ten fold that of trying to force static typing into a dynamically typed language so I started focusing on learning "good code" instead of making modules that would make my bad code work better.
+vval saw some success in preventing errors with the code I shared, but I eventually learned that the best way of preventing the problems of sharing my code mostly came down to sub-par code and documentation. I found out that the return on addressing code and documentation quality was ten fold that of trying to force static typing into a dynamically typed language so I started focusing on learning &ldquo;good code&rdquo; instead of making modules that would make my bad code work better.
 
-The flagship offering of vval was the `validate` function, what I thought back when I was working on it was "it's a pretty sweet deal because it comes in multiple flavors, you also get a `validate_iterable`, `validate_option` and `validate_filter` in the pack" which all do what you would expect...
+The flagship offering of vval was the `validate` function, what I thought back when I was working on it was &ldquo;it's a pretty sweet deal because it comes in multiple flavors, you also get a `validate_iterable`, `validate_option` and `validate_filter` in the pack&rdquo; which all do what you would expect...
 
 ```python
 def f(x: int | str) -> None:
