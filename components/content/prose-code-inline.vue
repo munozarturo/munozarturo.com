@@ -1,0 +1,7 @@
+<template>
+    <code class="text-md bg-tertiary text-secondary px-1 mx-0.5 py-0.5 rounded">
+        <slot />
+    </code>
+</template>
+
+<script setup lang="ts"></script>
