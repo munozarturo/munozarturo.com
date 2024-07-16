@@ -28,22 +28,22 @@ vval saw some success in preventing errors with the code I shared, but I eventua
 The flagship offering of vval was the `validate` function, what I thought back when I was working on it was &ldquo;it's a pretty sweet deal because it comes in multiple flavors, you also get a `validate_iterable`, `validate_option` and `validate_filter` in the pack&rdquo; which all do what you would expect...
 
 ```python
-def f(x: int | str) -> None:
+def f(x: int | str):
     validate(x, (int, str))
     ...
 
-def i(x: list[int | str | dict]) -> None:
+def i(x: list[int | str | dict]):
     validate_iterable(x, (int, str, dict))
     ...
 
-def k(x: str) -> None:
+def k(x: str):
     validate_option(x, ["apple", "banana", "cherry"])
     ...
 
-def positive_filter(value):
+def positive_filter(value) -> bool:
     return value > 0
 
-def l(x: int) -> None:
+def l(x: int):
     validate_filter(x, positive_filter)
     ...
 ```
@@ -51,7 +51,7 @@ def l(x: int) -> None:
 Although, I will admit you could easily just do this yourself without adding some shoddy code written by a highschooler to your codebase's repository by using the following pattern:
 
 ```python
-def f(x: int | str) -> None:
+def f(x: int | str):
     if isinstance(x, int):
         ...
     elif isinstance(x, str):
@@ -62,6 +62,6 @@ def f(x: int | str) -> None:
 ...  # and you can do something similar for the rest of them
 ```
 
-Which is also less lines of code because even if you used the `validate` function to handle multiple input types you would still need to handle the separate type cases.
+The above pattern basically makes vval useless, because on top of being a lot more readable it's less code because even if you used the `validate` function to validate multiple input types you would still need to handle them.
 
-Besides a couple of revisions made to update the PyPI packaging, to touch up the *brand*, and to extend functionality a little, vval has mostly remained the same since Novemeber of 2022. Thus it remains as a fond reminder of what I see as my early days; and for that I love it, the same way I imagine *Picasso* loved his first painting or *García Márquez* his first short story.
+Besides a couple of revisions made to update the PyPI packaging, to touch up the brand, and to extend functionality a little, vval has mostly remained the same since Novemeber of 2022. Thus it remains a fond reminder of my early days. For that I love it; the same way I imagine *Picasso* loved his first painting or *García Márquez* his first short story.

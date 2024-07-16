@@ -15,7 +15,7 @@
         </div>
         <pre
             ref="codeBlock"
-            class="w-full h-fit font-mono p-2 rounded-b-md border overflow-x-auto"
+            class="w-full h-fit font-mono p-4 rounded-b-md border overflow-x-auto"
         ><slot
         /></pre>
     </div>

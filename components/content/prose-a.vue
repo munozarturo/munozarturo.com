@@ -1,5 +1,7 @@
 <template>
-    <a class="underline" target="_blank" :href="href"><slot /></a>
+    <a class="underline items-center" target="_blank" :href="href"
+        ><slot /><Icon name="export" class="ml-1 w-4 h-4" />
+    </a>
 </template>
 
 <script setup lang="ts">
