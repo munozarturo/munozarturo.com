@@ -14,9 +14,9 @@
 </template>
 
 <script setup lang="ts">
-const showButton = ref(false);
-const mounted = ref(false);
-const scrollThreshold = window.screen.height / 3;
+const showButton = ref<boolean>(false);
+const mounted = ref<boolean>(false);
+const scrollThreshold = ref<number>(400);
 
 function scrollToTop() {
     window.scrollTo({
@@ -26,12 +26,13 @@ function scrollToTop() {
 }
 
 function handleScroll() {
-    showButton.value = window.scrollY > scrollThreshold;
+    showButton.value = window.scrollY > scrollThreshold.value;
 }
 
 onMounted(() => {
     window.addEventListener("scroll", handleScroll);
     mounted.value = true;
+    scrollThreshold.value = window.screen.height / 3;
 });
 
 onUnmounted(() => {
