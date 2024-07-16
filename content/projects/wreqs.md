@@ -28,7 +28,7 @@ I really can't complain about this becasue in it I saw an incredible opportunity
 This began a long saga of commits and pull requests, some of which inspired the creation of `wreqs` (**w**rapped **req**uest**s**)&mdash;what I saw as a better way of handling requests. `wreqs` is a context manager that allows for this pattern:
 
 ```python
-from wreqs import wreq, wreqs_session
+from wreqs import wreqs_session, wreq
 from requests import Request, Timeout
 
 with wreqs_session() as session:
