@@ -16,7 +16,7 @@
 <script setup lang="ts">
 const showButton = ref(false);
 const mounted = ref(false);
-const scrollThreshold = 400;
+const scrollThreshold = window.screen.height / 3;
 
 function scrollToTop() {
     window.scrollTo({
