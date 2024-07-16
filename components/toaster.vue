@@ -7,7 +7,7 @@
         <div
             v-for="message in messages"
             :key="message.id"
-            class="mb-4 rounded-lg px-4 py-3 shadow-md cursor-pointer flex items-start max-w-xs text-secondary bg-primary"
+            class="mb-4 rounded-lg px-4 py-3 shadow-md cursor-pointer flex items-start max-w-xs text-secondary bg-tertiary"
             @mouseover="pauseTimer(message.id)"
             @mouseleave="resumeTimer(message.id)"
             @click="dismissMessage(message.id)"
