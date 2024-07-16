@@ -1,4 +1,5 @@
 <template>
+    <ScrollToTop />
     <div class="w-full px-4 max-w-[768px] flex flex-col py-8">
         <ul class="space-y-6">
             <li
