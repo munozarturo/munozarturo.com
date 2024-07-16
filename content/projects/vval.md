@@ -1,7 +1,7 @@
 ---
 title: "vval"
 subtitle: "a python module for input validation."
-date: "2023-11-16T15:58:00"
+date: "2022-11-16T15:58:00"
 tags: ["python3"]
 links: [
     {
@@ -23,8 +23,45 @@ Back when I was still learning to code in Python I was very uncomfortable with t
 
 So I did something about it. I wrote a module that would strictly enforce the types of variables by using &ldquo;checker&rdquo; helper functions that would make sure that a variable being passed to a function could only be of types that function was written to handle.
 
-vval saw some success in preventing errors with the code I shared, but I eventually learned that the best way of preventing the problems of sharing my code mostly came down to *not-so-great* code and *pretty bad* documentation and I found out that the return on addressing these two things is ten-fold that of trying to force static typing into a dynamically typed language.
+vval saw some success in preventing errors with the code I shared, but I eventually learned that the best way of preventing the problems of sharing my code mostly came down to sub-par code and documentation. I found out that the return on addressing code and documentation quality was ten fold that of trying to force static typing into a dynamically typed language so I started focusing on learning "good code" instead of making modules that would make my bad code work better.
 
-Besides a couple of revisions I made to update the PyPI packaging of the module and to touch up the *brand*, vval has mostly remained the same since Novemeber of 2022.
+The flagship offering of vval was the `validate` function, what I thought back when I was working on it was "it's a pretty sweet deal because it comes in multiple flavors, you also get a `validate_iterable`, `validate_option` and `validate_filter` in the pack" which all do what you would expect...
 
-vval is a fond reminder of what I see as my early days; and for that I love it, the same way I imagine *Picasso* loved his first painting or *García Márquez* his first short story.
+```python
+def f(x: int | str) -> None:
+    validate(x, (int, str))
+    ...
+
+def i(x: list[int | str | dict]) -> None:
+    validate_iterable(x, (int, str, dict))
+    ...
+
+def k(x: str) -> None:
+    validate_option(x, ["apple", "banana", "cherry"])
+    ...
+
+def positive_filter(value):
+    return value > 0
+
+def l(x: int) -> None:
+    validate_filter(x, positive_filter)
+    ...
+```
+
+Although, I will admit you could easily just do this yourself without adding some shoddy code written by a highschooler to your codebase's repository by using the following pattern:
+
+```python
+def f(x: int | str) -> None:
+    if isinstance(x, int):
+        ...
+    elif isinstance(x, str):
+        ...
+    else: 
+        raise ValueError(...)
+
+...  # and you can do something similar for the rest of them
+```
+
+Which is also less lines of code because even if you used the `validate` function to handle multiple input types you would still need to handle the separate type cases.
+
+Besides a couple of revisions made to update the PyPI packaging, to touch up the *brand*, and to extend functionality a little, vval has mostly remained the same since Novemeber of 2022. Thus it remains as a fond reminder of what I see as my early days; and for that I love it, the same way I imagine *Picasso* loved his first painting or *García Márquez* his first short story.
