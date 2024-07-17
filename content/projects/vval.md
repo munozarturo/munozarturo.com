@@ -23,9 +23,9 @@ Back when I was still learning to code in Python I was very uncomfortable with t
 
 So I did something about it. I wrote a module that would strictly enforce the types of variables by using &ldquo;checker&rdquo; helper functions that would make sure that a variable being passed to a function could only be of types that function was written to handle.
 
-vval saw some success in preventing errors with the code I shared, but I eventually learned that the best way of preventing the problems of sharing my code mostly came down to sub-par code and documentation. I found out that the return on addressing code and documentation quality was ten fold that of trying to force static typing into a dynamically typed language so I started focusing on learning &ldquo;good code&rdquo; instead of making modules that would make my bad code work better.
+vval saw some success in preventing errors with the code I shared, but I eventually learned that the best way of preventing the problems of sharing my code mostly came down to sub-par code quality and bad documentation. I found out that the return on addressing these issues first was ten fold that of trying to force static typing into a dynamically typed language so I started focusing on learning &ldquo;good code&rdquo; instead of making modules that would make my bad code work better.
 
-The flagship offering of vval was the `validate` function, what I thought back when I was working on it was &ldquo;it's a pretty sweet deal because it comes in multiple flavors, you also get a `validate_iterable`, `validate_option` and `validate_filter` in the pack&rdquo; which all do what you would expect...
+The flagship offering of vval was the `validate` function. Back when I was working on it, I thought it was &ldquo;a pretty sweet deal because it comes in multiple flavors: you also get a `validate_iterable`, `validate_option` and `validate_filter` in the pack too,&rdquo;which all do what you would expect...
 
 ```python
 def f(x: int | str):
@@ -64,4 +64,4 @@ def f(x: int | str):
 
 The above pattern basically makes vval useless, because on top of being a lot more readable it's less code because even if you used the `validate` function to validate multiple input types you would still need to handle them.
 
-Besides a couple of revisions made to update the PyPI packaging, to touch up the brand, and to extend functionality a little, vval has mostly remained the same since Novemeber of 2022. Thus it remains a fond reminder of my early days. For that I love it; the same way I imagine *Picasso* loved his first painting or *García Márquez* his first short story.
+Besides a couple of revisions made to update the PyPI packaging, to touch up the brand, and to extend functionality a little, vval has mostly remained the same since Novemeber of 2022. Thus it remains a fond reminder of my early days. For that I love it; the same way I imagine *Picasso* loved his first painting, or *García Márquez* his first short story.

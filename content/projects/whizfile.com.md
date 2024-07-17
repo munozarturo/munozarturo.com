@@ -21,7 +21,7 @@ links: [
 
 And a functional copy I made. I even added features that I thought a file transfer service should have like being able to set the maximum number of downloads or views a transfer can receive, being able to decide when a transfer expires down to the minute, and allowing the receiver to delete a transfer if the sender deems it appropriate. It wasn't bloated, and it remained simple and useful ever since its inception.
 
-Even a year later, whizfile stands strong and... I am proud. It didn't have a bad rap either it saw a lot of use with some of my friends who liked sharing class assignments with each other&mdash;the privacy features really helped this use case&mdash;and it more importantly, it still stands strong. Today, you can go to whizfile, upload a file and get a transfer link. Send that transfer link to someone. Have said person download your transfer, and have it all work.
+Even a year later, whizfile perseveres and I...am proud. It doesn't have a bad rep, either. It saw a lot of use with some of my not so academically *inclined* friends who liked sharing class assignments with each other&mdash;the privacy features really helped this use case&mdash;and, more importantly, it still stands strong. Today, you can go to whizfile, upload a file and get a transfer link. Send that transfer link to someone. Have said person download your transfer, and have it all work.
 
 This was a project that started as a simple exploration into the jugnle that is web developed and led to me dedicating my foreseeable life to exploration. Starting the NextJS project that became whizfile made me feel like *Marco Polo* slashing his first vine.
 

@@ -16,3 +16,5 @@ links: [
 ---
 
 ![httpsauth-banner](/assets/httpsauth/banner.png)
+
+Ever since I made my first website, I was always obsessed with understanding how *the web* did authentication. I had made many attempts at replicating the

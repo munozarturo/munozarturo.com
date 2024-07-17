@@ -17,11 +17,11 @@ links: [
 
 ![wreqs-banner](/assets/wreqs/banner.png)
 
-The summer of 2024 I interned at [The Block](https://www.theblock.co/), a company that most insiders would describe as &ldquo;the *Bloomberg* of Crypto,&rdquo; a description with which I would agree&mdash;it was, at least at the time I worked there, the *Bloomberg* of Crypto.
+The summer of 2024 I interned at [The Block](https://www.theblock.co/), a company that most insiders would describe as &ldquo;the *Bloomberg* of Crypto,&rdquo; a description with which I would agree&mdash;it certainly was, at least at the time I worked there, the *Bloomberg* of Crypto.
 
-During this intership I *mostly* worked on the company's data pipeline, a large collection of scripts that would periodically scrape all corners of the web for data that would then be either be used by the research and editorial teams or given directly to our customers.
+During this intership I *mostly* worked on the company's data pipeline, a large collection of scripts that would periodically scrape all corners of the web for data that would then either be used by the research and editorial teams or given directly to our customers.
 
-When I arrived the data pipeline was consolidated in two large repositories, all written in Python and mostly maintained by the research team. When I first cloned this repository onto my machine and looked at the code that these scripts were running I thought to myself &ldquo;this is the worst code I have ever seen.&rdquo; Now that is not to say anything about the research team. Over the summer I got to work very closely with them and they were some of the most intelligent, capable, and talented individuals I have met in my life, and being fair to them it is a team whose primary skill was research&mdash;not coding.
+When I arrived the data pipeline was consolidated in two large repositories, all written in Python and mostly maintained by the research team. When I first cloned this repository onto my machine and looked at the code that these scripts were running I thought to myself &ldquo;this is the worst code I have ever seen.&rdquo; Now, that is not to say anything about the research team. Over the summer I got to work very closely with them and they were some of the most intelligent, capable, and talented individuals I have met in my life and, to be fair, it is a team whose primary skill was research&mdash;not coding.
 
 I really can't complain about this becasue in it I saw an incredible opportunity: a way to make my mark at this company. I thought that by cleaning up the data pipeline and improving it in every way I could think of I would have a long lasting&mdash;and meaningful&mdash;impact on the way the company gathered data.
 
@@ -41,4 +41,4 @@ with wreqs_session() as session:
         ...  # do something with res1
 ```
 
-All with built in logging, retry handling, and plenty of other features. Which I honestly believe improved the developer experience for everyone working on the data pipeline and saved our team hundreds of hours in the long run. As of the time of writing this, I consider this to be one of my greater successes.
+All with built in logging, retry handling, and plenty of other features, which I honestly believe improved the developer experience for everyone working on the data pipeline and saved our team hundreds of hours in the long run. As of the time of writing this, I consider this to be one of my greater successes.
