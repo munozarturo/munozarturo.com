@@ -31,6 +31,37 @@ export default defineEventHandler(async (event) => {
             credit: "Atreya",
             footnote: "",
         },
+        {
+            quote: "The world is full of people who are grabbing and self-seeking. So the rare individual who unselfishly tries to serve others has an enormous advantage.",
+            credit: "Dale Carnegie",
+            footnote: "",
+        },
+        {
+            quote: "It is the individual who is not interested in his fellow men who has the greatest difficulties in life and provides the greatest injury to others.",
+            credit: "Alfred Adler",
+            footnote: "",
+        },
+        {
+            quote: "Smile.",
+            credit: "",
+            footnote: "",
+        },
+        {
+            quote: "Every man I meet is my superior in some way, and in that I learn from him.",
+            credit: "Ralph Waldo Emerson",
+            footnote: "",
+        },
+        {
+            quote: "Give a dog a bad name and you may as well hang him.",
+            credit: "",
+            footnote:
+                "i.e. If a person's reputation has been damaged, then they will suffer great difficulty and hardship.",
+        },
+        // {
+        //     quote: "",
+        //     credit: "",
+        //     footnote: "",
+        // },
     ];
 
     return quotes;
