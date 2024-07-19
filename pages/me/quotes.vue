@@ -39,7 +39,7 @@
                 <hr class="border-t border-tertiary my-4 mx-2" />
                 <span
                     v-if="quote.footnote"
-                    class="w-full flex flex-row items-start justify-end"
+                    class="w-full flex flex-row items-start justify-start"
                 >
                     <p>{{ quote.footnote }}</p>
                 </span>

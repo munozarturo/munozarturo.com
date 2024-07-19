@@ -55,13 +55,13 @@ export default defineEventHandler(async (event) => {
             quote: "Give a dog a bad name and you may as well hang him.",
             credit: "",
             footnote:
-                "i.e. If a person's reputation has been damaged, then they will suffer great difficulty and hardship.",
+                "i.e. a person will live up to the reputation they are given.",
         },
-        // {
-        //     quote: "",
-        //     credit: "",
-        //     footnote: "",
-        // },
+        {
+            quote: "The man who has done his best has done everything.",
+            credit: "Charles Schwab",
+            footnote: "",
+        },
     ];
 
     return quotes;
