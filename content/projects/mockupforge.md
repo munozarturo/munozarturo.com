@@ -13,13 +13,13 @@ links: [
 
 ![mockupforge-banner](/assets/mockupforge/banner.png)
 
-Mockup Forge was&mdash;mostly&mdash;an experiment. An experiment to test how well I could use Docker to build a microservice. An expement which I could only run after installing a linux distro on my old PC because I was too cheap to shell out a Ben Franklin to upgrade my Windows 10 Home&copy; to Windows 10 Pro&copy;.
+Mockup Forge was&mdash;mostly&mdash;an experiment. An experiment to test how well I could use Docker. An expement which I could only run after installing a linux distro on my old PC because I was too cheap to shell out a Ben Franklin to upgrade my laptop from Windows 10 Home&copy; to Windows 10 Pro&copy;.
 
 Mockup Forge is nothing but a VM running a Flask application that uses a locally installed copy of [GIMP](https://www.gimp.org/) to manipulate photoshop files that *I* stole from the internet to generate mockups with images other people *will* steal from the internet.
 
-Like this wonderfull mockup of 1928 Mickey on a white T-shirt. Which, I would like to note, is not infringing on Disney's copyright because the original, 1928 Mickey Mouse is now part of the public domain.
+Like this white shirt with 1928 Mickey on it. Which, I would like to note, does not infringe on Disney's intellectual property because the original, 1928 Mickey Mouse became part of the public domain in January of this year.
 
 ::content-image{src="/assets/mockupforge/mockup-mickey.png" alt="Mickey Shirt" styleClass="w-2/3"}
 ::
 
-Now I am by no means a Docker expert, matter of fact I wont't even claim to understand it. All I know is that the world runs on containerized services and if someone asks me a question and I hear &ldquo;Docker,&rdquo; I should slowly nod and mumble &ldquo;VM&rdquo; in response.
+Even though I was able to create the sick image above by purely using my Python skills I, by no means, claim to be a Docker expert, matter of fact I wont't even claim to understand Docker. All I will tell you is that the world runs on containerized services and we should all venerate and love Kamel Founadi, Solomon Hykes, and Sebastien Pahl as gods for using their creative brilliance to create Docker in 2010. Even though, Docker is the very foundation for the microservice hell we now live in we should still love it, because the alternative is probably worse.
