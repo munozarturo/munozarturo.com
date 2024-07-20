@@ -1,5 +1,7 @@
 <template>
-    <img class="max-w-full h-auto rounded-md" :src="src" :alt="alt" />
+    <div class="flex flex-row items-center justify-center">
+        <img class="max-w-full h-auto rounded-md" :src="src" :alt="alt" />
+    </div>
 </template>
 
 <script setup lang="ts">
