@@ -4,7 +4,14 @@ export default defineNuxtConfig({
     content: {
         highlight: {
             theme: "monokai",
-            langs: ["python", "typescript", "javascript", "rust", "bash"],
+            langs: [
+                "python",
+                "typescript",
+                "javascript",
+                "json",
+                "rust",
+                "bash",
+            ],
         },
     },
     components: [

@@ -1,7 +1,7 @@
 ---
 title: "wreqs"
 subtitle: "wrapped requests in python."
-date: "2024-07-18T13:31:00"
+date: "2024-07-27T13:31:00"
 tags: ["python3"]
 links: [
     {
@@ -41,4 +41,6 @@ with wreqs_session() as session:
         ...  # do something with res1
 ```
 
-All with built in logging, retry handling, and plenty of other features, which I honestly believe improved the developer experience for everyone working on the data pipeline and saved our team hundreds of hours in the long run. As of the time of writing this, I consider this to be one of my greater successes.
+All with built in logging, retry handling, and plenty of other features, which I honestly believe improved the developer experience for everyone working on the data pipeline and saved our team hundreds of hours in the long run.
+
+Eventually, I internalized everything this library did to reduce the number of inconveniences my successor would have to deal with when I inevitably left the company to finish my degree. Nevertheless, I consider this to be one of my greater successes&mdash;at least as of the time of writing this.
