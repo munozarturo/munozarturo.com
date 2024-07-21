@@ -22,6 +22,4 @@ And a functional copy I made. I even added features that I thought a file transf
 
 Even a year later, whizfile perseveres and I...am proud. It doesn't have a bad rep, either. It saw a lot of use with some of my not so academically *inclined* friends who liked sharing class assignments with each other&mdash;the privacy features really helped this use case&mdash;and, more importantly, it still stands strong. Today, you can go to whizfile, upload a file and get a transfer link. Send that transfer link to someone. Have said person download your transfer, and have it all work.
 
-This was a project that started as a simple exploration into the jugnle that is web developed and led to me dedicating my foreseeable life to exploration. Starting the NextJS project that became whizfile made me feel like *Marco Polo* slashing his first vine.
-
-I will always look back at whizfile and think about it as &ldquo;the one&rdquo; that started it all.
+Whizfile is not user friendly, ugly, and was not designed using the &rdquo;correct&ldquo; design principles. However, it is true to who I am, an engineer not an artist&mdash;and even though it is horrid, it works.
