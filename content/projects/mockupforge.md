@@ -24,4 +24,4 @@ Like this white shirt with 1928 Mickey on it. Which doesn&lsquo;t infringe on Di
 
 Even though I was able to create the sick image above I, by no means, claim to be a Docker expert, matter of fact I wouldn&lsquo;t even dare claim to understand it. All I will tell you is that the world runs on containerized services and we should all venerate and love the creators of Docker as gods for using their collective brilliance to create it; even though, it is the very blood that pumps the heart of the microservice hell we now inhabit.
 
-Regardless of the project, the Dockerfile build will always be like a car crash you can&lsquo;t look away from, except you&lsquo;re the driver, you&lsquo;re drinking, and you&lsquo;re causing all of this to happen. I think, that regardless of what Docker has turned the world into, we should still love it because the alternative is worse and probably sends your personal information to the CCP.
+Regardless of how good you get at using Docker, the build will always be like a car crash you can&lsquo;t look away from, except you&lsquo;re the driver, you&lsquo;re drinking, and you&lsquo;re causing all of it to happen.
