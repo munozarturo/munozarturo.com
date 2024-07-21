@@ -21,6 +21,4 @@ Like this white shirt with 1928 Mickey on it. Which doesn&lsquo;t infringe on Di
 ::content-image{src="/assets/mockupforge/mockup-mickey.png" alt="Mickey Shirt" styleClass="w-2/3"}
 ::
 
-Even though I was able to create the sick image above I, by no means, claim to be a Docker expert, matter of fact I wouldn&lsquo;t even dare claim to understand it. All I will tell you is that the world runs on containerized services and we should all venerate and love the creators of Docker as gods for using their collective brilliance to create it; even though, it is the very blood that pumps the heart of the microservice hell we now inhabit.
-
-Regardless of how good you get at using Docker, the build will always be like a car crash you can&lsquo;t look away from, except you&lsquo;re the driver, you&lsquo;re drinking, and you&lsquo;re causing all of it to happen.
+Even though I was able to create the sick image above I, by no means, claim to be a Docker expert, matter of fact I wouldn&lsquo;t even dare claim to understand it. All I will tell you is that the world runs on containerized services and we should all venerate and love the creators of Docker as gods for using their collective brilliance to create it; even though, it is the very life blood of the microservice hell we now inhabit.
