@@ -13,9 +13,8 @@ links: [
         "href": "https://github.com/munozarturo/vval",
     },
 ]
+banner: "/assets/vval/banner.png"
 ---
-
-![vval-banner](/assets/vval/banner.png)
 
 This is probably the first &ldquo;big&rdquo; project that I worked on. vval was a project inspired by strictly typed languages, the likes of Java and C++, which shaped the early days of my programming.
 

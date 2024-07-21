@@ -13,9 +13,8 @@ links: [
         "href": "https://github.com/munozarturo/munozarturo.com",
     },
 ]
+banner: "/assets/munozarturo/banner.png"
 ---
-
-![munozarturo-banner](/assets/munozarturo/banner.png)
 
 This is the very website you are looking at. Don&lsquo;t worry I still made sure to include the little globe icon that opens this website in another tab just for your convenience. As an added bonus, it will also confuse anyone that opens the links in these pages before reading anything.
 

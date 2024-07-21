@@ -9,6 +9,7 @@ links: [
         "href": "https://campusflavor.com/",
     },
 ]
+banner: "/assets/campusflavor/banner.png"
 ---
 
-![campusflavor-banner](/assets/campusflavor/banner.png)
+From a technical perspective, Campus Flavor was nothing special

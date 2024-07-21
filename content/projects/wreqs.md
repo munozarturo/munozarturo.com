@@ -13,9 +13,8 @@ links: [
         "href": "https://github.com/munozarturo/wreqs",
     },
 ]
+banner: "/assets/wreqs/banner.png"
 ---
-
-![wreqs-banner](/assets/wreqs/banner.png)
 
 The summer of 2024 I interned at [The Block](https://www.theblock.co/), a company that most insiders would describe as &ldquo;the *Bloomberg* of Crypto,&rdquo; a description with which I would agree&mdash;it certainly was, at least at the time I worked there, the *Bloomberg* of Crypto.
 

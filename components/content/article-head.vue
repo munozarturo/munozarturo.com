@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col space-y-4">
+    <div class="flex flex-col space-y-4 pb-2">
         <div class="flex flex-row justify-between text-md">
             <span
                 >{{ formatDate(new Date(page.date)) }} &centerdot;
@@ -16,6 +16,9 @@
         <h2 class="text-3xl font-bold text-tertiary">{{ page.subtitle }}</h2>
         <div class="flex fex-row space-x-2 text-tertiary">
             <p v-for="tag in page.tags">#{{ tag }}</p>
+        </div>
+        <div v-if="page.banner" class="w-full h-auto">
+            <img :src="page.banner" alt="Project Banner" class="rounded-md" />
         </div>
     </div>
 </template>

@@ -13,9 +13,8 @@ links: [
         "href": "https://github.com/munozarturo/whizfile.com",
     },
 ]
+banner: "/assets/whizfile/banner.png"
 ---
-
-![whizfile-banner](/assets/whizfile/banner.png)
 
 [whizfile.com](https://www.whizfile.com) is the first &ldquo;proper&rdquo; website that I made. It is the first time I used react, the first time I used a full stack framework, the first time I used TypeScript, and the first time I used external services like S3. What `whizfile` was inspired by was a popular file transfer service, [wetransfer.com](https://wetransfer.com/). I used this service a lot and eventually decided attempt to make something similar. Like a boy fascinated by planes making a paper aircraft I set out to make a funtional copy of this website.
 

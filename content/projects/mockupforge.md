@@ -9,9 +9,8 @@ links: [
         "href": "https://github.com/munozarturo/mockupforge",
     },
 ]
+banner: "/assets/mockupforge/banner.png"
 ---
-
-![mockupforge-banner](/assets/mockupforge/banner.png)
 
 If I&lsquo;m being honest, Mockup Forge was mostly an experiment; an experiment to test how well I could use Docker; an experiment which I could only run after installing a linux distro on my old PC because I was too cheap to shell out a Ben Franklin to upgrade my laptop&lsquo;s operating system to Windows 10 Pro&copy;.
 
