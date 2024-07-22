@@ -41,5 +41,3 @@ with wreqs_session() as session:
 ```
 
 All with built in logging, retry handling, and plenty of other features, which I honestly believe improved the developer experience for everyone working on the data pipeline and saved our team hundreds of hours in the long run.
-
-Eventually, I internalized everything this library did to reduce the number of inconveniences my successor would have to deal with when I inevitably left the company to finish my degree. Nevertheless, I consider this to be one of my greater successes&mdash;at least as of the time of writing this.
