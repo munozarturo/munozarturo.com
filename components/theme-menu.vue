@@ -4,8 +4,12 @@
             <Icon name="palette" class="w-6 h-6" />
         </button>
         <div
-            class="fixed top-0 right-0 w-1/5 rounded-l-xl bg-secondary h-full shadow-lg transform transition-transform duration-700 ease-in-out z-40 overflow-y-auto"
-            :class="showMenu ? 'translate-x-0' : 'translate-x-full'"
+            class="fixed top-24 right-12 w-1/5 rounded-xl bg-secondary h-fit shadow-lg transform transition-all duration-700 ease-in-out z-40 overflow-y-auto"
+            :class="
+                showMenu
+                    ? 'translate-x-0 opacity-100'
+                    : ' translate-x-[120%] opacity-0'
+            "
         >
             <div class="p-4 flex flex-col gap-8">
                 <div class="flex flex-row items-center justify-between">
@@ -84,10 +88,12 @@
                         <button
                             v-for="theme in Object.keys(themes)"
                             :key="theme"
+                            @click="selectTheme(theme)"
                             class="flex flex-col items-center justify-center w-16 p-2 rounded-md"
+                            :class="{ 'bg-tertiary': selectedTheme === theme }"
                         >
                             <Icon :name="theme" class="w-12 h-12" />
-                            <p class="text-md">
+                            <p class="text-md mt-1">
                                 {{ theme }}
                             </p>
                         </button>
@@ -157,6 +163,10 @@ const themes: { [key: string]: Theme } = {
         foreground: "#129878",
         highlight: "#0B5E50",
     },
+};
+const selectedTheme = ref(Object.keys(themes)[0]); // Default to the first theme
+const selectTheme = (theme: string) => {
+    selectedTheme.value = theme;
 };
 
 const showMenu = ref<boolean>(false);
