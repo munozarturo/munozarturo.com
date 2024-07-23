@@ -18,12 +18,10 @@ banner: "/assets/httpsauth/banner.png"
 
 Ever since I made my first website ([whizfile](/projects/whizfile.com)), I began to notice everything in the websites I visited and became fascinated with trying to figure out *how* they did them. Inevitably, some things interested me more than others&mdash;one such thing was *authentication*.
 
-For a bit, I became obsessed with trying to make my own authentication from scratch. Many attempts were made to tackle this challenge, and I mostly failed, I would always stumble into some issue that I wouldn't know how to solve. Something that didn't matter to me because each attempt taught me something new, and with each attempt I got a little closer to getting it right.
+For a bit, I was obsessed with authentication, specifically trying to implement it from scratch. I made many attempts to tackle this challenge and I kept failing. I always stumbled into some issue that I wouldn't know how to solve, or just keep making small mistakes that would snowball into a huge mistake that made me want to start over. Even though at this point I only knew faliure, it didn't matter to me because each attempt taught me something new, and with each attempt I got a little closer to getting it right&mdash;I knew if I kept going, it was inevitable that I would get it right.
 
-Eventually, this obsession subsided and I continued working on other projects and acquiring more skills until I came into another period of idleness. I didn't really know what to work on, so I thought I would like to try and learn a new framework: Nuxt3. You see, up until that point I had only used NextJS, so this was a pretty big move. And I needed to build something to learn nuxt with, so I decided to make another attempt at my own authentication.
+Eventually, this obsession subsided and I was able to divert my attention to working on other projects I came into another period of idleness. I didn't really know what to work on, so I thought I should have a crack at learning `Nuxt`. Something that was a pretty big more for me since up until that point I had only used `NextJS`. I decided that the best &ldquo;practice project&rdquo; would be to try to do authentication from scratch *again*.
 
-So I opened my bash terminal and ran `npx nuxi@latest init httpsauth` and that's how this project came to be.
+It went well. Over a two week period I created everything I though *authentication* should have. A REST HTTP API, email notifications, password resets, a nice UI to wrap it all together, and a bunch of other stuff I have forgotten by now... Point is, I made it in my image of perfection (which is not to suggest that it is or was perfect, just that to *me* it seemed perfect).
 
-After I started, the project just kind of completed itself. See by this attempt I had already learned how to use Amazon's SES and `drizzle` and I was already pretty good at writing my own HTTPS APIs, and I just knew enough that it felt like making toast. I really don't have an answer as to what changed between this attempt and all of the previous ones except I just knew a lot more.
-
-Anyways, I did it.
+This project actually went on to define how I would develop websites for the foreseeable future.
