@@ -7,7 +7,7 @@
             class="fixed top-0 right-0 w-1/5 rounded-l-xl bg-secondary h-full shadow-lg transform transition-transform duration-700 ease-in-out z-40 overflow-y-auto"
             :class="showMenu ? 'translate-x-0' : 'translate-x-full'"
         >
-            <div class="p-4 flex flex-col gap-4">
+            <div class="p-4 flex flex-col gap-8">
                 <div class="flex flex-row items-center justify-between">
                     <h1 class="font-bold text-xl">Theme</h1>
                     <button @click="closeMenu">
@@ -61,14 +61,17 @@
                     >
                         <button
                             v-for="fontType in fontTypes"
+                            :key="fontType"
+                            @click="selectFontType(fontType)"
                             class="flex flex-col items-center justify-center w-14 p-2 rounded-md"
+                            :class="{
+                                'bg-tertiary': selectedFontType === fontType,
+                            }"
                         >
-                            <Icon
-                                :name="fontType"
-                                class="w-8 h-8"
-                                color="#72716D"
-                            />
-                            <p class="text-md text-tertiary">{{ fontType }}</p>
+                            <Icon :name="fontType" class="w-8 h-8" />
+                            <p class="text-md">
+                                {{ fontType }}
+                            </p>
                         </button>
                     </div>
                 </div>
@@ -91,12 +94,18 @@
 import { ref, onMounted, onUnmounted } from "vue";
 
 const fontSizes: string[] = ["xs", "sm", "md", "lg", "xl"];
-const selectedFontSizeIndex = ref(2);
+const selectedFontSizeIndex = ref<number>(2);
 const updateFontSize = () => {
     const selectedSize = fontSizes[selectedFontSizeIndex.value];
 };
 
 const fontTypes: string[] = ["serif", "sans", "mono"];
+const selectedFontType = ref(fontTypes[1]);
+
+const selectFontType = (fontType: string) => {
+    selectedFontType.value = fontType;
+};
+
 const themes: string[] = [
     "light",
     "paper",
