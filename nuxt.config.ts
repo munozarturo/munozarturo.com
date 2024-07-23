@@ -21,6 +21,7 @@ export default defineNuxtConfig({
         },
     ],
     css: ["~/assets/css/scrollbar.css"],
+    plugins: ["~/plugins/pinia-persist.ts"],
     modules: [
         "@nuxtjs/tailwindcss",
         "@nuxt/content",
