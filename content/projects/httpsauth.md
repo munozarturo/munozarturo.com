@@ -23,5 +23,3 @@ For a bit, I was obsessed with authentication, specifically trying to implement 
 Eventually, this obsession subsided and I was able to divert my attention to working on other projects I came into another period of idleness. I didn't really know what to work on, so I thought I should have a crack at learning `Nuxt`. Something that was a pretty big more for me since up until that point I had only used `NextJS`. I decided that the best &ldquo;practice project&rdquo; would be to try to do authentication from scratch *again*.
 
 It went well. Over a two week period I created everything I though *authentication* should have. A REST HTTP API, email notifications, password resets, a nice UI to wrap it all together, and a bunch of other stuff I have forgotten by now... Point is, I made it in my image of perfection (which is not to suggest that it is or was perfect, just that to *me* it seemed perfect).
-
-This project actually went on to define how I would develop websites for the foreseeable future.
