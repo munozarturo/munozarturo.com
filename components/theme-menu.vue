@@ -78,6 +78,20 @@
                 <!--  -->
                 <div>
                     <h2 class="text-lg font-semibold mb-2">Color Scheme</h2>
+                    <div
+                        class="flex flex-row flex-wrap items-center justify-center gap-4"
+                    >
+                        <button
+                            v-for="theme in Object.keys(themes)"
+                            :key="theme"
+                            class="flex flex-col items-center justify-center w-16 p-2 rounded-md"
+                        >
+                            <Icon :name="theme" class="w-12 h-12" />
+                            <p class="text-md">
+                                {{ theme }}
+                            </p>
+                        </button>
+                    </div>
                 </div>
                 <!--  -->
             </div>
@@ -106,14 +120,44 @@ const selectFontType = (fontType: string) => {
     selectedFontType.value = fontType;
 };
 
-const themes: string[] = [
-    "light",
-    "paper",
-    "dark",
-    "desert",
-    "ocean",
-    "forest",
-];
+interface Theme {
+    background: string;
+    foreground: string;
+    highlight: string;
+}
+
+const themes: { [key: string]: Theme } = {
+    light: {
+        background: "#FEFEFF",
+        foreground: "#313131",
+        highlight: "#474DD6",
+    },
+    paper: {
+        background: "#F9F6F0",
+        foreground: "#313131",
+        highlight: "#474DD6",
+    },
+    dark: {
+        background: "#1E1E1E",
+        foreground: "#C9C7B3",
+        highlight: "#72716D",
+    },
+    desert: {
+        background: "#332A2C",
+        foreground: "#CFA476",
+        highlight: "#89602F",
+    },
+    ocean: {
+        background: "#06273A",
+        foreground: "#128898",
+        highlight: "#0A4858",
+    },
+    forest: {
+        background: "#052529",
+        foreground: "#129878",
+        highlight: "#0B5E50",
+    },
+};
 
 const showMenu = ref<boolean>(false);
 
