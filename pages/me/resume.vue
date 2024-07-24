@@ -35,7 +35,7 @@
 
             <section>
                 <h2 class="text-xl font-bold">Education</h2>
-                <hr class="border-t border-tertiary" />
+                <hr class="border-t border-highlight" />
                 <div v-for="edu in resume.education">
                     <span class="flex flex-row justify-between">
                         <h3 class="font-bold">{{ edu.institution }}</h3>
@@ -62,7 +62,7 @@
 
             <section>
                 <h2 class="text-xl font-bold">Experience</h2>
-                <hr class="border-t border-tertiary" />
+                <hr class="border-t border-highlight" />
                 <div v-for="exp in resume.experience">
                     <span class="flex flex-row justify-between">
                         <h3 class="font-bold">{{ exp.company }}</h3>
@@ -82,7 +82,7 @@
 
             <section>
                 <h2 class="text-xl font-bold">Skills</h2>
-                <hr class="border-t border-tertiary" />
+                <hr class="border-t border-highlight" />
                 <ul class="pl-8">
                     <li>
                         <p>
@@ -126,7 +126,7 @@
                         </span>
                     </a>
                 </div>
-                <hr class="border-t border-tertiary" />
+                <hr class="border-t border-highlight" />
                 <div v-for="project in resume.projects">
                     <div class="flex flex-row justify-between">
                         <span class="flex flex-row items-center space-x-1"
@@ -158,7 +158,7 @@
 
             <section>
                 <h2 class="text-xl font-bold">Community</h2>
-                <hr class="border-t border-tertiary" />
+                <hr class="border-t border-highlight" />
                 <div v-for="com in resume.community">
                     <span class="flex flex-row justify-between">
                         <h3 class="font-bold">{{ com.title }}</h3>

@@ -29,7 +29,7 @@
                             :max="fontSizes.length - 1"
                             v-model="selectedFontSizeIndex"
                             @input="updateFontSize"
-                            class="relative w-full appearance-none bg-transparent [&::-webkit-slider-runnable-track]:h-1 [&::-webkit-slider-runnable-track]:bg-tertiary [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:w-3 [&::-webkit-slider-thumb]:h-3 [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-foreground [&::-webkit-slider-thumb]:mt-[-4px] [&::-webkit-slider-thumb]:relative [&::-webkit-slider-thumb]:z-10 cursor-pointer"
+                            class="relative w-full appearance-none bg-transparent [&::-webkit-slider-runnable-track]:h-1 [&::-webkit-slider-runnable-track]:bg-highlight [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:w-3 [&::-webkit-slider-thumb]:h-3 [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-foreground [&::-webkit-slider-thumb]:mt-[-4px] [&::-webkit-slider-thumb]:relative [&::-webkit-slider-thumb]:z-10 cursor-pointer"
                         />
                         <div
                             class="absolute bottom-0.5 left-0 right-0 flex justify-between px-1 pointer-events-none -z-10"
@@ -37,7 +37,7 @@
                             <span
                                 v-for="(size, index) in fontSizes"
                                 :key="index"
-                                class="w-0.5 h-3 bg-tertiary"
+                                class="w-0.5 h-3 bg-highlight"
                             ></span>
                         </div>
                         <div
@@ -69,7 +69,7 @@
                             @click="selectFontType(fontType)"
                             class="flex flex-col items-center justify-center w-14 p-2 rounded-md"
                             :class="{
-                                'bg-tertiary': selectedFontType === fontType,
+                                'bg-highlight': selectedFontType === fontType,
                             }"
                         >
                             <Icon :name="fontType" class="w-8 h-8" />
@@ -90,7 +90,7 @@
                             :key="theme"
                             @click="selectTheme(theme)"
                             class="flex flex-col items-center justify-center w-16 p-2 rounded-md"
-                            :class="{ 'bg-tertiary': selectedTheme === theme }"
+                            :class="{ 'bg-highlight': selectedTheme === theme }"
                         >
                             <Icon :name="theme" class="w-12 h-12" />
                             <p class="text-md mt-1">

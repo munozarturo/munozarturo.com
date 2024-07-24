@@ -46,6 +46,14 @@ body {
     background-color: var(--foreground);
 }
 
+.bg-highlight {
+    background-color: var(--highlight);
+}
+
+.border-highlight {
+    border-color: var(--highlight);
+}
+
 .text-highlight {
     color: var(--highlight);
 }

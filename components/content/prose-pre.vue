@@ -1,5 +1,5 @@
 <template>
-    <div class="text-md flex flex-col mx-2 bg-tertiary rounded-md">
+    <div class="text-md flex flex-col mx-2 bg-highlight rounded-md">
         <div
             class="w-full h-fit flex flex-row items-center justify-between px-4 py-1"
         >

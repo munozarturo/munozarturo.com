@@ -36,7 +36,7 @@
                         &mdash; {{ quote.credit }}
                     </p>
                 </span>
-                <hr class="border-t border-tertiary my-4 mx-2" />
+                <hr class="border-t border-highlight my-4 mx-2" />
                 <span
                     v-if="quote.footnote"
                     class="w-full flex flex-row items-start justify-start"
