@@ -83,7 +83,7 @@
                         class="flex flex-row flex-wrap items-center justify-center gap-4"
                     >
                         <button
-                            v-for="theme in Object.keys(themes)"
+                            v-for="theme in themes"
                             :key="theme"
                             @click="selectTheme(theme)"
                             class="flex flex-col items-center justify-center w-16 p-2 rounded-md"
@@ -121,50 +121,19 @@ const updateFontSize = () => {
 
 const fontTypes: string[] = ["serif", "sans", "mono"];
 const selectedFontType = ref(fontTypes[1]);
-
 const selectFontType = (fontType: string) => {
     selectedFontType.value = fontType;
 };
 
-interface Theme {
-    background: string;
-    foreground: string;
-    highlight: string;
-}
-
-const themes: { [key: string]: Theme } = {
-    light: {
-        background: "#FEFEFF",
-        foreground: "#313131",
-        highlight: "#474DD6",
-    },
-    paper: {
-        background: "#F9F6F0",
-        foreground: "#313131",
-        highlight: "#474DD6",
-    },
-    dark: {
-        background: "#1E1E1E",
-        foreground: "currentColor",
-        highlight: "#72716D",
-    },
-    desert: {
-        background: "#332A2C",
-        foreground: "#CFA476",
-        highlight: "#89602F",
-    },
-    ocean: {
-        background: "#06273A",
-        foreground: "#128898",
-        highlight: "#0A4858",
-    },
-    forest: {
-        background: "#052529",
-        foreground: "#129878",
-        highlight: "#0B5E50",
-    },
-};
-const selectedTheme = ref(Object.keys(themes)[0]); // Default to the first theme
+const themes: string[] = [
+    "light",
+    "paper",
+    "dark",
+    "desert",
+    "ocean",
+    "forest",
+];
+const selectedTheme = ref(themes[0]);
 const selectTheme = (theme: string) => {
     selectedTheme.value = theme;
 };
