@@ -29,7 +29,7 @@
                             :max="fontSizes.length - 1"
                             v-model="selectedFontSizeIndex"
                             @input="updateFontSize"
-                            class="relative w-full appearance-none bg-transparent [&::-webkit-slider-runnable-track]:h-1 [&::-webkit-slider-runnable-track]:bg-highlight [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:w-3 [&::-webkit-slider-thumb]:h-3 [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-foreground [&::-webkit-slider-thumb]:mt-[-4px] [&::-webkit-slider-thumb]:relative [&::-webkit-slider-thumb]:z-10 cursor-pointer"
+                            class="relative w-full appearance-none bg-transparent slider"
                         />
                         <div
                             class="absolute bottom-0.5 left-0 right-0 flex justify-between px-1 pointer-events-none -z-10"
@@ -37,7 +37,7 @@
                             <span
                                 v-for="(size, index) in fontSizes"
                                 :key="index"
-                                class="w-0.5 h-3 bg-highlight"
+                                class="w-0.5 h-3 bg-background-secondary"
                             ></span>
                         </div>
                         <div
@@ -46,11 +46,7 @@
                             <span
                                 v-for="(size, index) in fontSizes"
                                 :key="index"
-                                class="text-md text-highlight transform -translate-x-1/3"
-                                :class="{
-                                    'text-foreground':
-                                        index === selectedFontSizeIndex,
-                                }"
+                                class="text-md text-foreground transform -translate-x-1/3"
                             >
                                 {{ size }}
                             </span>
@@ -69,8 +65,7 @@
                             @click="selectFontType(fontType)"
                             class="flex flex-col items-center justify-center w-14 p-2 rounded-md"
                             :class="{
-                                'bg-highlight': selectedFontType === fontType,
-                                'text-background':
+                                'bg-background-secondary':
                                     selectedFontType === fontType,
                             }"
                         >
@@ -93,8 +88,8 @@
                             @click="selectTheme(theme)"
                             class="flex flex-col items-center justify-center w-16 p-2 rounded-md"
                             :class="{
-                                'bg-highlight': selectedTheme === theme,
-                                'text-background': selectedTheme === theme,
+                                'bg-background-secondary':
+                                    selectedTheme === theme,
                             }"
                         >
                             <Icon :name="theme" class="w-12 h-12" />
@@ -202,3 +197,21 @@ onUnmounted(() => {
     toggleBodyScroll(false);
 });
 </script>
+
+<style scoped>
+.slider::-webkit-slider-runnable-track {
+    height: 0.25rem;
+    background-color: var(--background-secondary);
+}
+
+.slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 9999px;
+    background-color: var(--foreground);
+    margin-top: -0.25rem;
+    position: relative;
+    z-index: 10;
+}
+</style>
