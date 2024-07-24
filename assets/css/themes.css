@@ -1,10 +1,10 @@
 :root {
     --background: #fefeff;
-    --background-secondary: #eeeeee;
+    --background-secondary: #efefef;
     --foreground: #313131;
     --foreground-secondary: #313131;
     --highlight: #474dd6;
-    --highlight-secondary: #474dd6;
+    --highlight-secondary: #b9bdff;
 }
 
 .paper-theme {
@@ -80,8 +80,8 @@ body {
     background-color: var(--highlight);
 }
 
-.bg-highlight-secondary {
-    background-color: var(--highlight-secondary);
+.bg-background-secondary {
+    background-color: var(--background-secondary);
 }
 
 .border-foreground {
