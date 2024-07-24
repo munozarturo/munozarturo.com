@@ -20,7 +20,7 @@ export default defineNuxtConfig({
             pathPrefix: false,
         },
     ],
-    css: ["~/assets/css/scrollbar.css"],
+    css: ["~/assets/css/scrollbar.css", "~/assets/css/themes.css"],
     plugins: ["~/plugins/pinia-persist.ts"],
     modules: [
         "@nuxtjs/tailwindcss",

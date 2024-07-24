@@ -1,5 +1,5 @@
 <template>
-    <thead class="text-secondary bg-primary">
+    <thead class="text-secondary bg-foreground">
         <slot />
     </thead>
 </template>

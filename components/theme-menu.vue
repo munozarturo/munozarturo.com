@@ -29,7 +29,7 @@
                             :max="fontSizes.length - 1"
                             v-model="selectedFontSizeIndex"
                             @input="updateFontSize"
-                            class="relative w-full appearance-none bg-transparent [&::-webkit-slider-runnable-track]:h-1 [&::-webkit-slider-runnable-track]:bg-tertiary [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:w-3 [&::-webkit-slider-thumb]:h-3 [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-primary [&::-webkit-slider-thumb]:mt-[-4px] [&::-webkit-slider-thumb]:relative [&::-webkit-slider-thumb]:z-10 cursor-pointer"
+                            class="relative w-full appearance-none bg-transparent [&::-webkit-slider-runnable-track]:h-1 [&::-webkit-slider-runnable-track]:bg-tertiary [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:w-3 [&::-webkit-slider-thumb]:h-3 [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-foreground [&::-webkit-slider-thumb]:mt-[-4px] [&::-webkit-slider-thumb]:relative [&::-webkit-slider-thumb]:z-10 cursor-pointer"
                         />
                         <div
                             class="absolute bottom-0.5 left-0 right-0 flex justify-between px-1 pointer-events-none -z-10"

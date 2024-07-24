@@ -1,8 +1,8 @@
 <template>
     <a
         v-bind="$attrs"
-        class="font-semibold text-lg rounded-md transition-colors duration-300 ease-in-out hover:bg-primary hover:text-secondary py-1 px-2"
-        :class="{ 'bg-primary text-secondary': isActive }"
+        class="font-semibold text-lg rounded-md transition-colors duration-300 ease-in-out hover:bg-foreground hover:text-secondary py-1 px-2"
+        :class="{ 'bg-foreground text-secondary': isActive }"
         :href="href"
     >
         <slot />
