@@ -4,7 +4,7 @@
             <Icon name="palette" class="w-6 h-6" />
         </button>
         <div
-            class="fixed top-24 right-12 w-1/5 rounded-xl bg-secondary h-fit shadow-lg transform transition-all duration-700 ease-in-out z-40 overflow-y-auto"
+            class="fixed top-24 right-12 w-1/5 rounded-xl bg-background h-fit shadow-lg transform transition-all duration-700 ease-in-out z-40 overflow-y-auto"
             :class="
                 showMenu
                     ? 'translate-x-0 opacity-100'
@@ -48,7 +48,7 @@
                                 :key="index"
                                 class="text-md text-highlight transform -translate-x-1/3"
                                 :class="{
-                                    'text-primary':
+                                    'text-foreground':
                                         index === selectedFontSizeIndex,
                                 }"
                             >
@@ -70,6 +70,8 @@
                             class="flex flex-col items-center justify-center w-14 p-2 rounded-md"
                             :class="{
                                 'bg-highlight': selectedFontType === fontType,
+                                'text-background':
+                                    selectedFontType === fontType,
                             }"
                         >
                             <Icon :name="fontType" class="w-8 h-8" />
@@ -90,7 +92,10 @@
                             :key="theme"
                             @click="selectTheme(theme)"
                             class="flex flex-col items-center justify-center w-16 p-2 rounded-md"
-                            :class="{ 'bg-highlight': selectedTheme === theme }"
+                            :class="{
+                                'bg-highlight': selectedTheme === theme,
+                                'text-background': selectedTheme === theme,
+                            }"
                         >
                             <Icon :name="theme" class="w-12 h-12" />
                             <p class="text-md mt-1">
@@ -105,7 +110,7 @@
         <div
             v-if="showMenu"
             @click="closeMenu"
-            class="fixed inset-0 bg-black bg-opacity-50 z-30"
+            class="fixed inset-0 backdrop-blur-sm z-30"
         ></div>
     </div>
 </template>

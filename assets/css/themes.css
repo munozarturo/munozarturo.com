@@ -58,6 +58,14 @@ body {
     border-color: var(--highlight);
 }
 
+.text-foreground {
+    color: var(--foreground);
+}
+
+.text-background {
+    color: var(--background);
+}
+
 .text-highlight {
     color: var(--highlight);
 }

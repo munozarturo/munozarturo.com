@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full h-16 flex flex-row shadow-2xl">
+    <div class="w-full h-16 flex flex-row shadow-lg">
         <nav
             class="w-full h-full flex flex-row items-center justify-between py-4 px-16"
         >

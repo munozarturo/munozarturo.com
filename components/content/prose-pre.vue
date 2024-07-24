@@ -3,10 +3,10 @@
         <div
             class="w-full h-fit flex flex-row items-center justify-between px-4 py-1"
         >
-            <p class="font-bold text-secondary">
+            <p class="font-bold text-foreground">
                 {{ language }}
             </p>
-            <button class="text-secondary flex items-center" @click="copy">
+            <button class="text-foreground flex items-center" @click="copy">
                 <Icon name="copy" class="stroke-current w-5 h-5" />
             </button>
         </div>

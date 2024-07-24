@@ -1,6 +1,6 @@
 <template>
     <code
-        class="text-base bg-highlight text-secondary px-1 mx-0.5 py-0.5 rounded"
+        class="text-base bg-highlight text-foreground px-1 mx-0.5 py-0.5 rounded"
     >
         <slot />
     </code>
