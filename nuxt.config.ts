@@ -21,11 +21,12 @@ export default defineNuxtConfig({
         },
     ],
     css: ["~/assets/css/scrollbar.css", "~/assets/css/themes.css"],
-    plugins: ["~/plugins/pinia-persist.ts"],
+    plugins: [],
     modules: [
         "@nuxtjs/tailwindcss",
         "@nuxt/content",
         "@nuxt/image",
         "@pinia/nuxt",
+        "@pinia-plugin-persistedstate/nuxt",
     ],
 });

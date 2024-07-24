@@ -111,8 +111,6 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted } from "vue";
-
 const fontSizes: string[] = ["xs", "sm", "md", "lg", "xl"];
 const selectedFontSizeIndex = ref<number>(2);
 const updateFontSize = () => {
@@ -125,17 +123,13 @@ const selectFontType = (fontType: string) => {
     selectedFontType.value = fontType;
 };
 
-const themes: string[] = [
-    "light",
-    "paper",
-    "dark",
-    "desert",
-    "ocean",
-    "forest",
-];
-const selectedTheme = ref(themes[0]);
+const themeStore = useThemeStore();
+
+const themes: string[] = themeStore.availableThemes;
+const selectedTheme = ref(themeStore.theme);
 const selectTheme = (theme: string) => {
     selectedTheme.value = theme;
+    themeStore.setTheme(theme);
 };
 
 const showMenu = ref<boolean>(false);
