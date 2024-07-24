@@ -1,55 +1,55 @@
 :root {
     --background: #fefeff;
-    --background-secondary: #efefef;
+    --background-secondary: #f7f7f8;
     --foreground: #313131;
-    --foreground-secondary: #313131;
+    --foreground-secondary: #494949;
     --highlight: #474dd6;
-    --highlight-secondary: #b9bdff;
+    --highlight-secondary: #6a6fe0;
 }
 
-.paper-theme {
+.paper-mode {
     --background: #f1e7d0;
-    --background-secondary: #eae0c9;
+    --background-secondary: #f5ede0;
     --foreground: #433422;
-    --foreground-secondary: #504231;
+    --foreground-secondary: #5a4836;
     --highlight: #8d7d69;
-    --highlight-secondary: #b3a089;
+    --highlight-secondary: #a49584;
 }
 
-.dark-theme {
+.dark-mode {
     --background: #1e1e1e;
-    --background-secondary: #1e1e1e;
+    --background-secondary: #2a2a2a;
     --foreground: #c9c7b3;
-    --foreground-secondary: #c9c7b3;
+    --foreground-secondary: #d4d2c2;
     --highlight: #72716d;
-    --highlight-secondary: #72716d;
+    --highlight-secondary: #898883;
 }
 
-.desert-theme {
+.desert-mode {
     --background: #332a2c;
-    --background-secondary: #332a2c;
+    --background-secondary: #403437;
     --foreground: #cfa476;
-    --foreground-secondary: #cfa476;
+    --foreground-secondary: #d8b491;
     --highlight: #89602f;
-    --highlight-secondary: #89602f;
+    --foreground-secondary: #a07546;
 }
 
-.ocean-theme {
+.ocean-mode {
     --background: #06273a;
-    --background-secondary: #06273a;
+    --background-secondary: #0d3449;
     --foreground: #128898;
-    --foreground-secondary: #128898;
+    --foreground-secondary: #1a9fb0;
     --highlight: #0a4858;
-    --highlight-secondary: #0a4858;
+    --highlight-secondary: #125b6e;
 }
 
-.forest-theme {
+.forest-mode {
     --background: #052529;
-    --background-secondary: #052529;
+    --background-secondary: #0c3236;
     --foreground: #129878;
-    --foreground-secondary: #129878;
+    --foreground-secondary: #1aab89;
     --highlight: #0b5e50;
-    --highlight-secondary: #0b5e50;
+    --highlight-secondary: #127162;
 }
 
 body {

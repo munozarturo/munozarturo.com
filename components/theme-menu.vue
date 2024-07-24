@@ -37,7 +37,7 @@
                             <span
                                 v-for="(size, index) in fontSizes"
                                 :key="index"
-                                class="w-0.5 h-3 bg-background-secondary"
+                                class="w-0.5 h-3 bg-foreground"
                             ></span>
                         </div>
                         <div
@@ -111,6 +111,8 @@
 </template>
 
 <script setup lang="ts">
+const colorMode = useColorMode();
+
 const fontSizes: string[] = ["xs", "sm", "md", "lg", "xl"];
 const selectedFontSizeIndex = ref<number>(2);
 const updateFontSize = () => {
@@ -130,6 +132,7 @@ const selectedTheme = ref(themeStore.theme);
 const selectTheme = (theme: string) => {
     selectedTheme.value = theme;
     themeStore.setTheme(theme);
+    colorMode.preference = theme;
 };
 
 const showMenu = ref<boolean>(false);
@@ -164,7 +167,7 @@ onUnmounted(() => {
 <style scoped>
 .slider::-webkit-slider-runnable-track {
     height: 0.25rem;
-    background-color: var(--background-secondary);
+    background-color: var(--foreground);
 }
 
 .slider::-webkit-slider-thumb {

@@ -23,7 +23,9 @@ const useThemeStore = defineStore("theme", {
             this.theme = theme;
         },
     },
-    persist: true,
+    persist: {
+        key: "theme-store",
+    },
 });
 
 export { useThemeStore };
