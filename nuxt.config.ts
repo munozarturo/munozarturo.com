@@ -21,7 +21,7 @@ export default defineNuxtConfig({
         },
     ],
     css: ["~/assets/css/scrollbar.css", "~/assets/css/themes.css"],
-    plugins: [],
+    plugins: ["~/plugins/theme.client.ts", "~/plugins/theme.server.ts"],
     modules: [
         "@nuxtjs/tailwindcss",
         "@nuxt/content",

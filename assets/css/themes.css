@@ -8,12 +8,12 @@
 }
 
 .paper-theme {
-    --background: #f9f6f0;
-    --background-secondary: #f9f6f0;
-    --foreground: #313131;
-    --foreground-secondary: #313131;
-    --highlight: #474dd6;
-    --highlight-secondary: #474dd6;
+    --background: #f1e7d0;
+    --background-secondary: #eae0c9;
+    --foreground: #433422;
+    --foreground-secondary: #504231;
+    --highlight: #8d7d69;
+    --highlight-secondary: #b3a089;
 }
 
 .dark-theme {
