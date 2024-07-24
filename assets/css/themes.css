@@ -50,6 +50,10 @@ body {
     background-color: var(--highlight);
 }
 
+.border-foreground {
+    background-color: var(--foreground);
+}
+
 .border-highlight {
     border-color: var(--highlight);
 }
