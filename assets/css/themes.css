@@ -1,4 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+
 :root {
+    --font: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
     --background: #fefeff;
     --background-secondary: #f7f7f8;
     --foreground: #313131;
@@ -53,81 +58,18 @@
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    background-color: var(--background);
-    color: var(--foreground);
-    transition: background-color 0.3s, color 0.3s;
+    font-family: var(--font);
 }
 
-.bg-foreground {
-    background-color: var(--foreground);
+.font-sans {
+    --font: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.bg-foreground-secondary {
-    background-color: var(--foreground-secondary);
+.font-serif {
+    --font: "Merriweather", Georgia, "Times New Roman", Times, serif;
 }
 
-.bg-background {
-    background-color: var(--background);
-}
-
-.bg-background-secondary {
-    background-color: var(--background-secondary);
-}
-
-.bg-highlight {
-    background-color: var(--highlight);
-}
-
-.bg-background-secondary {
-    background-color: var(--background-secondary);
-}
-
-.border-foreground {
-    border-color: var(--foreground);
-}
-
-.border-foreground-secondary {
-    border-color: var(--foreground-secondary);
-}
-
-.border-background {
-    border-color: var(--background);
-}
-
-.border-background-secondary {
-    border-color: var(--background-secondary);
-}
-
-.border-highlight {
-    border-color: var(--highlight);
-}
-
-.border-highlight-secondary {
-    border-color: var(--highlight-secondary);
-}
-
-.text-foreground {
-    color: var(--foreground);
-}
-
-.text-foreground-secondary {
-    color: var(--foreground-secondary);
-}
-
-.text-background {
-    color: var(--background);
-}
-
-.text-background-secondary {
-    color: var(--background-secondary);
-}
-
-.text-highlight {
-    color: var(--highlight);
-}
-
-.text-highlight-secondary {
-    color: var(--highlight-secondary);
+.font-mono {
+    --font: "JetBrains Mono", Consolas, "Courier New", monospace;
 }
