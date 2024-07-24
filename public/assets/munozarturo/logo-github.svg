@@ -1,10 +1,10 @@
 <svg width="235" height="80" viewBox="0 0 235 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="40.7" y="8" width="19.2" height="19.2" fill="#C9C7B3"/>
-<rect x="130.3" y="8" width="19.2" height="19.2" fill="#C9C7B3"/>
-<rect x="175.1" y="8" width="19.2" height="19.2" fill="#C9C7B3"/>
-<rect x="107.9" y="30.4" width="19.2" height="19.2" fill="#C9C7B3"/>
-<rect x="152.7" y="30.4" width="19.2" height="19.2" fill="#C9C7B3"/>
-<rect x="40.7" y="52.8" width="19.2" height="19.2" fill="#C9C7B3"/>
-<rect x="85.5" y="52.8" width="19.2" height="19.2" fill="#C9C7B3"/>
-<rect x="130.3" y="52.8" width="19.2" height="19.2" fill="#C9C7B3"/>
+    <rect x="40.7" y="8" width="19.2" height="19.2" fill="currentColor" />
+    <rect x="130.3" y="8" width="19.2" height="19.2" fill="currentColor" />
+    <rect x="175.1" y="8" width="19.2" height="19.2" fill="currentColor" />
+    <rect x="107.9" y="30.4" width="19.2" height="19.2" fill="currentColor" />
+    <rect x="152.7" y="30.4" width="19.2" height="19.2" fill="currentColor" />
+    <rect x="40.7" y="52.8" width="19.2" height="19.2" fill="currentColor" />
+    <rect x="85.5" y="52.8" width="19.2" height="19.2" fill="currentColor" />
+    <rect x="130.3" y="52.8" width="19.2" height="19.2" fill="currentColor" />
 </svg>

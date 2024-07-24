@@ -145,7 +145,7 @@ const themes: { [key: string]: Theme } = {
     },
     dark: {
         background: "#1E1E1E",
-        foreground: "#C9C7B3",
+        foreground: "currentColor",
         highlight: "#72716D",
     },
     desert: {

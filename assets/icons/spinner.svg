@@ -1,19 +1,19 @@
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M12 6V3" stroke="#C9C7B3" stroke-width="2" stroke-linecap="round"
+    <path d="M12 6V3" stroke="currentColor" stroke-width="2" stroke-linecap="round"
         stroke-linejoin="round" />
-    <path d="M12 21V19" stroke="#C9C7B3" stroke-width="2" stroke-linecap="round"
+    <path d="M12 21V19" stroke="currentColor" stroke-width="2" stroke-linecap="round"
         stroke-linejoin="round" />
-    <path d="M19 12H21" stroke="#C9C7B3" stroke-width="2" stroke-linecap="round"
+    <path d="M19 12H21" stroke="currentColor" stroke-width="2" stroke-linecap="round"
         stroke-linejoin="round" />
-    <path d="M3 12H6" stroke="#C9C7B3" stroke-width="2" stroke-linecap="round"
+    <path d="M3 12H6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
         stroke-linejoin="round" />
-    <path d="M17.6569 6.34313L18.364 5.63602" stroke="#C9C7B3" stroke-width="2"
+    <path d="M17.6569 6.34313L18.364 5.63602" stroke="currentColor" stroke-width="2"
         stroke-linecap="round" stroke-linejoin="round" />
-    <path d="M5.63599 18.364L7.0502 16.9497" stroke="#C9C7B3" stroke-width="2"
+    <path d="M5.63599 18.364L7.0502 16.9497" stroke="currentColor" stroke-width="2"
         stroke-linecap="round" stroke-linejoin="round" />
-    <path d="M16.9497 16.9498L18.364 18.364" stroke="#C9C7B3" stroke-width="2"
+    <path d="M16.9497 16.9498L18.364 18.364" stroke="currentColor" stroke-width="2"
         stroke-linecap="round" stroke-linejoin="round" />
-    <path d="M5.63611 5.63605L7.75743 7.75737" stroke="#C9C7B3" stroke-width="2"
+    <path d="M5.63611 5.63605L7.75743 7.75737" stroke="currentColor" stroke-width="2"
         stroke-linecap="round" stroke-linejoin="round" />
 </svg>
     
