@@ -45,3 +45,7 @@ body {
 .bg-foreground {
     background-color: var(--foreground);
 }
+
+.text-highlight {
+    color: var(--highlight);
+}

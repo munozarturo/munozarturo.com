@@ -20,10 +20,10 @@
                         <h1 class="text-4xl font-bold">{{ project.title }}</h1>
                         <p>{{ formatDate(new Date(project.date)) }}</p>
                     </div>
-                    <h2 class="text-2xl font-bold text-tertiary">
+                    <h2 class="text-2xl font-bold text-highlight">
                         {{ project.subtitle }}
                     </h2>
-                    <div class="flex fex-row space-x-2 text-tertiary">
+                    <div class="flex fex-row space-x-2 text-highlight">
                         <p v-for="tag in project.tags">#{{ tag }}</p>
                     </div>
                 </NuxtLink>

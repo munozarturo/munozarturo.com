@@ -46,7 +46,7 @@
                             <span
                                 v-for="(size, index) in fontSizes"
                                 :key="index"
-                                class="text-md text-tertiary transform -translate-x-1/3"
+                                class="text-md text-highlight transform -translate-x-1/3"
                                 :class="{
                                     'text-primary':
                                         index === selectedFontSizeIndex,
