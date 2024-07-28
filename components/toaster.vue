@@ -7,7 +7,7 @@
         <div
             v-for="message in messages"
             :key="message.id"
-            class="mb-4 rounded-lg px-4 py-3 shadow-md cursor-pointer flex items-start max-w-xs text-foreground bg-highlight"
+            class="mb-4 rounded-md px-4 py-3 shadow-md cursor-pointer flex items-start max-w-xs text-foreground bg-background-secondary"
             @mouseover="pauseTimer(message.id)"
             @mouseleave="resumeTimer(message.id)"
             @click="dismissMessage(message.id)"
@@ -59,7 +59,7 @@
                     />
                 </svg>
             </div>
-            <div class="flex-1 break-words">
+            <div class="flex-1 break-words text-adj">
                 <div v-html="message.message"></div>
             </div>
         </div>

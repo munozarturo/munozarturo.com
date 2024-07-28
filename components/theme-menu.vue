@@ -101,7 +101,7 @@
 <script setup lang="ts">
 const { $classInject } = useNuxtApp();
 
-const fontSizes: string[] = ["xs", "sm", "md", "lg", "xl"];
+const fontSizes: string[] = ["sm", "md", "lg"];
 const fontSizeIndex = ref<number>(0);
 const currentFontSize = ref<string | null>(null);
 const fontTypes: string[] = ["serif", "sans", "mono"];
@@ -119,8 +119,8 @@ const currentTheme = ref<string | null>(null);
 const setFontSize = (size: string) => {
     const current: string[] = $classInject.classList.value;
 
-    const classList = current.filter((cls) => !cls.startsWith("font-size-"));
-    classList.push(`font-size-${size}`);
+    const classList = current.filter((cls) => !cls.startsWith("size-"));
+    classList.push(`size-${size}`);
 
     $classInject.classList.value = classList;
     currentFontSize.value = size;
@@ -150,7 +150,7 @@ function fetchCurrent(): void {
     const current: string[] = $classInject.classList.value;
 
     fontSizes.forEach((size, index) => {
-        if (current.includes(`font-size-${size}`)) {
+        if (current.includes(`size-${size}`)) {
             currentFontSize.value = size;
             fontSizeIndex.value = index;
         }

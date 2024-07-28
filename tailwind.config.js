@@ -12,10 +12,19 @@ export default {
                 "highlight-secondary": "var(--highlight-secondary)",
             },
             fontFamily: {
-                themed: "var(--font)",
+                themed: "var(--font-type-adj)",
             },
-            fontSize: {},
         },
     },
-    plugins: [],
+    plugins: [
+        function ({ addUtilities }) {
+            const newUtilities = {
+                ".text-adj": {
+                    "font-size": "var(--size-adj)",
+                    "line-height": "var(--size-adj-line-height)",
+                },
+            };
+            addUtilities(newUtilities, ["responsive", "hover"]);
+        },
+    ],
 };

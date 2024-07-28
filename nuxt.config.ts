@@ -21,7 +21,7 @@ export default defineNuxtConfig({
         },
     ],
     classInject: {
-        fallback: ["theme-dark", "font-sans", "font-size-md"],
+        fallback: ["theme-dark", "font-sans", "size-md"],
     },
     css: ["~/assets/css/scrollbar.css", "~/assets/css/themes.css"],
     plugins: [],
