@@ -4,49 +4,48 @@
             <Icon name="palette" class="w-6 h-6" />
         </button>
         <div
-            class="fixed top-24 right-12 w-1/5 rounded-xl bg-background h-fit transform shadow-sm shadow-foreground transition-all duration-700 ease-in-out z-40 overflow-y-auto"
+            class="fixed top-24 right-12 w-1/5 rounded-md bg-background-secondary h-fit transform transition-all duration-700 ease-in-out z-40 overflow-y-auto"
             :class="
                 showMenu
                     ? 'translate-x-0 opacity-100'
                     : ' translate-x-[120%] opacity-0'
             "
         >
-            <div class="p-4 flex flex-col gap-8">
-                <div class="flex flex-row items-center justify-between">
-                    <h1 class="font-bold text-xl">Theme</h1>
-                    <button @click="closeMenu">
-                        <Icon name="close" class="w-4 h-4" />
-                    </button>
-                </div>
-
+            <div class="p-4 flex flex-col gap-4">
                 <!-- Font Size Selector -->
                 <div>
-                    <h2 class="text-lg font-semibold mb-2">Font Size</h2>
-                    <div class="relative pt-6 px-1">
-                        <input
-                            type="range"
-                            :min="0"
-                            :max="fontSizes.length - 1"
-                            v-model="fontSizeIndex"
-                            @input="setFontSize(fontSizes[fontSizeIndex])"
-                            class="relative w-full appearance-none bg-transparent slider"
-                        />
-                        <div
-                            class="absolute top-1 left-0 right-0 flex justify-between px-1"
+                    <div
+                        class="flex flex-row items-center justify-between mb-2"
+                    >
+                        <h2 class="text-lg font-semibold">font size</h2>
+                        <button
+                            class="flex flex-row items-center justify-center"
+                            @click="closeMenu"
                         >
-                            <span
-                                v-for="(size, index) in fontSizes"
-                                :key="index"
-                                class="text-md text-foreground transform -translate-x-1/3"
-                            >
-                                {{ size }}
-                            </span>
-                        </div>
+                            <Icon name="close" class="w-3 h-3" />
+                        </button>
+                    </div>
+                    <div
+                        class="flex flex-row flex-wrap items-center justify-center gap-4"
+                    >
+                        <button
+                            v-for="fontSize in fontSizes"
+                            :key="fontSize"
+                            @click="setFontSize(fontSize)"
+                            class="flex flex-col items-center justify-center p-2 rounded-md"
+                            :class="{
+                                'bg-background': currentFontSize === fontSize,
+                            }"
+                        >
+                            <p class="text-md">
+                                {{ fontSize }}
+                            </p>
+                        </button>
                     </div>
                 </div>
                 <!--  -->
                 <div>
-                    <h2 class="text-lg font-semibold mb-2">Font Type</h2>
+                    <h2 class="text-lg font-semibold mb-2">font type</h2>
                     <div
                         class="flex flex-row flex-wrap items-center justify-center gap-4"
                     >
@@ -56,8 +55,7 @@
                             @click="setFontType(fontType)"
                             class="flex flex-col items-center justify-center w-14 p-2 rounded-md"
                             :class="{
-                                'bg-background-secondary':
-                                    currentFontType === fontType,
+                                'bg-background': currentFontType === fontType,
                             }"
                         >
                             <Icon :name="fontType" class="w-8 h-8" />
@@ -69,7 +67,7 @@
                 </div>
                 <!--  -->
                 <div>
-                    <h2 class="text-lg font-semibold mb-2">Color Scheme</h2>
+                    <h2 class="text-lg font-semibold mb-2">color scheme</h2>
                     <div
                         class="flex flex-row flex-wrap items-center justify-center gap-4"
                     >
@@ -79,8 +77,7 @@
                             @click="setTheme(theme)"
                             class="flex flex-col items-center justify-center w-16 p-2 rounded-md"
                             :class="{
-                                'bg-background-secondary':
-                                    currentTheme === theme,
+                                'bg-background': currentTheme === theme,
                             }"
                         >
                             <Icon :name="theme" class="w-12 h-12" />

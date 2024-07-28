@@ -14,6 +14,7 @@ export default {
             fontFamily: {
                 themed: "var(--font)",
             },
+            fontSize: {},
         },
     },
     plugins: [],
