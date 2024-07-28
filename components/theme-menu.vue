@@ -27,6 +27,8 @@
                             type="range"
                             :min="0"
                             :max="fontSizes.length - 1"
+                            v-model="fontSizeIndex"
+                            @input="setFontSize(fontSizes[fontSizeIndex])"
                             class="relative w-full appearance-none bg-transparent slider"
                         />
                         <div
@@ -103,6 +105,7 @@
 const { $classInject } = useNuxtApp();
 
 const fontSizes: string[] = ["xs", "sm", "md", "lg", "xl"];
+const fontSizeIndex = ref<number>(0);
 const currentFontSize = ref<string | null>(null);
 const fontTypes: string[] = ["serif", "sans", "mono"];
 const currentFontType = ref<string | null>(null);
@@ -149,8 +152,11 @@ const setTheme = (theme: string) => {
 function fetchCurrent(): void {
     const current: string[] = $classInject.classList.value;
 
-    fontSizes.forEach((size) => {
-        if (current.includes(`font-size-${size}`)) currentFontSize.value = size;
+    fontSizes.forEach((size, index) => {
+        if (current.includes(`font-size-${size}`)) {
+            currentFontSize.value = size;
+            fontSizeIndex.value = index;
+        }
     });
 
     fontTypes.forEach((font) => {
