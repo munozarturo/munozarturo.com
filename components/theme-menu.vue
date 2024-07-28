@@ -27,8 +27,6 @@
                             type="range"
                             :min="0"
                             :max="fontSizes.length - 1"
-                            v-model="selectedFontSizeIndex"
-                            @input="updateFontSize"
                             class="relative w-full appearance-none bg-transparent slider"
                         />
                         <div
@@ -62,11 +60,11 @@
                         <button
                             v-for="fontType in fontTypes"
                             :key="fontType"
-                            @click="selectFontType(fontType)"
+                            @click="setFontType(fontType)"
                             class="flex flex-col items-center justify-center w-14 p-2 rounded-md"
                             :class="{
                                 'bg-background-secondary':
-                                    selectedFontType === fontType,
+                                    currentFontType === fontType,
                             }"
                         >
                             <Icon :name="fontType" class="w-8 h-8" />
@@ -85,11 +83,11 @@
                         <button
                             v-for="theme in themes"
                             :key="theme"
-                            @click="selectTheme(theme)"
+                            @click="setTheme(theme)"
                             class="flex flex-col items-center justify-center w-16 p-2 rounded-md"
                             :class="{
                                 'bg-background-secondary':
-                                    selectedTheme === theme,
+                                    currentTheme === theme,
                             }"
                         >
                             <Icon :name="theme" class="w-12 h-12" />
@@ -111,29 +109,55 @@
 </template>
 
 <script setup lang="ts">
-const colorMode = useColorMode();
+const { $classInject } = useNuxtApp();
 
 const fontSizes: string[] = ["xs", "sm", "md", "lg", "xl"];
-const selectedFontSizeIndex = ref<number>(2);
-const updateFontSize = () => {
-    const selectedSize = fontSizes[selectedFontSizeIndex.value];
-};
-
+const currentFontSize = ref<string | null>(null);
 const fontTypes: string[] = ["serif", "sans", "mono"];
-const selectedFontType = ref(fontTypes[1]);
-const selectFontType = (fontType: string) => {
-    selectedFontType.value = fontType;
+const currentFontType = ref<string | null>(null);
+const themes: string[] = [
+    "light",
+    "paper",
+    "dark",
+    "desert",
+    "forest",
+    "ocean",
+];
+const currentTheme = ref<string | null>(null);
+
+const setFontType = (font: string) => {
+    console.log("set", font);
+    const current: string[] = $classInject.classList.value;
+
+    const classList = current.filter((cls) => !cls.startsWith("font-"));
+    classList.push(`font-${font}`);
+
+    $classInject.classList.value = classList;
+    currentFontType.value = font;
 };
 
-const themeStore = useThemeStore();
+const setTheme = (theme: string) => {
+    console.log("set", theme);
+    const current: string[] = $classInject.classList.value;
 
-const themes: string[] = themeStore.availableThemes;
-const selectedTheme = ref(themeStore.theme);
-const selectTheme = (theme: string) => {
-    selectedTheme.value = theme;
-    themeStore.setTheme(theme);
-    colorMode.preference = theme;
+    const classList = current.filter((cls) => !cls.startsWith("theme-"));
+    classList.push(`theme-${theme}`);
+
+    $classInject.classList.value = classList;
+    currentTheme.value = theme;
 };
+
+function fetchCurrent(): void {
+    const current: string[] = $classInject.classList.value;
+
+    fontTypes.forEach((font) => {
+        if (current.includes(`font-${font}`)) currentFontType.value = font;
+    });
+
+    themes.forEach((theme) => {
+        if (current.includes(`theme-${theme}`)) currentTheme.value = theme;
+    });
+}
 
 const showMenu = ref<boolean>(false);
 
@@ -156,6 +180,7 @@ const closeMenu = () => {
 };
 
 onMounted(() => {
+    fetchCurrent();
     toggleBodyScroll(showMenu.value);
 });
 

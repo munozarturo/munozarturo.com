@@ -11,6 +11,9 @@ export default {
                 "background-secondary": "var(--background-secondary)",
                 "highlight-secondary": "var(--highlight-secondary)",
             },
+            fontFamily: {
+                themed: "var(--font)",
+            },
         },
     },
     plugins: [],

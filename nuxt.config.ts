@@ -20,6 +20,9 @@ export default defineNuxtConfig({
             pathPrefix: false,
         },
     ],
+    classInject: {
+        fallback: ["theme-dark", "font-sans"],
+    },
     css: ["~/assets/css/scrollbar.css", "~/assets/css/themes.css"],
     plugins: [],
     modules: [
@@ -28,6 +31,6 @@ export default defineNuxtConfig({
         "@nuxt/image",
         "@pinia/nuxt",
         "@pinia-plugin-persistedstate/nuxt",
-        "@nuxtjs/color-mode",
+        "nuxt-class-inject",
     ],
 });
