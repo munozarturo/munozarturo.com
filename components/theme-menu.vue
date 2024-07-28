@@ -30,15 +30,6 @@
                             class="relative w-full appearance-none bg-transparent slider"
                         />
                         <div
-                            class="absolute bottom-0.5 left-0 right-0 flex justify-between px-1 pointer-events-none -z-10"
-                        >
-                            <span
-                                v-for="(size, index) in fontSizes"
-                                :key="index"
-                                class="w-0.5 h-3 bg-foreground"
-                            ></span>
-                        </div>
-                        <div
                             class="absolute top-1 left-0 right-0 flex justify-between px-1"
                         >
                             <span
@@ -125,8 +116,17 @@ const themes: string[] = [
 ];
 const currentTheme = ref<string | null>(null);
 
+const setFontSize = (size: string) => {
+    const current: string[] = $classInject.classList.value;
+
+    const classList = current.filter((cls) => !cls.startsWith("font-size-"));
+    classList.push(`font-size-${size}`);
+
+    $classInject.classList.value = classList;
+    currentFontType.value = size;
+};
+
 const setFontType = (font: string) => {
-    console.log("set", font);
     const current: string[] = $classInject.classList.value;
 
     const classList = current.filter((cls) => !cls.startsWith("font-"));
@@ -137,7 +137,6 @@ const setFontType = (font: string) => {
 };
 
 const setTheme = (theme: string) => {
-    console.log("set", theme);
     const current: string[] = $classInject.classList.value;
 
     const classList = current.filter((cls) => !cls.startsWith("theme-"));
@@ -149,6 +148,10 @@ const setTheme = (theme: string) => {
 
 function fetchCurrent(): void {
     const current: string[] = $classInject.classList.value;
+
+    fontSizes.forEach((size) => {
+        if (current.includes(`font-size-${size}`)) currentFontSize.value = size;
+    });
 
     fontTypes.forEach((font) => {
         if (current.includes(`font-${font}`)) currentFontType.value = font;
@@ -197,11 +200,11 @@ onUnmounted(() => {
 
 .slider::-webkit-slider-thumb {
     appearance: none;
-    width: 0.75rem;
-    height: 0.75rem;
-    border-radius: 9999px;
+    width: 0.25rem;
+    height: 1rem;
+    border-radius: 0px;
     background-color: var(--foreground);
-    margin-top: -0.25rem;
+    margin-top: -0.4rem;
     position: relative;
     z-index: 10;
 }
