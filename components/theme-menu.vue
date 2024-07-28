@@ -126,7 +126,7 @@ const setFontSize = (size: string) => {
     classList.push(`font-size-${size}`);
 
     $classInject.classList.value = classList;
-    currentFontType.value = size;
+    currentFontSize.value = size;
 };
 
 const setFontType = (font: string) => {
