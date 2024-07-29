@@ -1,20 +1,19 @@
 <template>
-    <div class="text-md flex flex-col mx-2 bg-tertiary rounded-md">
+    <div class="text-md flex flex-col mx-2 bg-foreground-secondary rounded-md">
         <div
-            class="w-full h-fit flex flex-row items-center justify-between px-4 py-1"
+            class="w-full h-fit flex flex-row text-background-secondary items-center justify-between px-4 pt-2 pb-1.5"
         >
-            <p class="font-bold text-secondary">
+            <p class="font-bold">
                 {{ language }}
             </p>
-            <button class="text-secondary flex items-center" @click="copy">
+            <button class="flex items-center" @click="copy">
                 <Icon name="copy" class="stroke-current w-5 h-5" />
             </button>
         </div>
         <pre
             ref="codeBlock"
-            class="w-full h-fit font-mono p-4 bg-[#272822] overflow-x-auto rounded-md"
-        ><slot
-        /></pre>
+            class="w-full h-fit font-mono px-4 py-6 bg-background-secondary overflow-x-auto rounded-md"
+        ><slot/></pre>
     </div>
 </template>
 

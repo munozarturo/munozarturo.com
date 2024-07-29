@@ -1,8 +1,8 @@
 <template>
     <a
         v-bind="$attrs"
-        class="font-semibold text-lg rounded-md transition-colors duration-300 ease-in-out hover:bg-primary hover:text-secondary py-1 px-2"
-        :class="{ 'bg-primary text-secondary': isActive }"
+        class="font-semibold text-lg rounded-md transition-colors duration-300 ease-in-out py-1 px-2"
+        :class="{ 'bg-foreground text-background': isActive }"
         :href="href"
     >
         <slot />
@@ -21,3 +21,10 @@ const props = defineProps({
 
 const isActive = computed(() => route.path == props.href);
 </script>
+
+<style lang="css" scoped>
+a:hover {
+    background-color: var(--foreground);
+    color: var(--background);
+}
+</style>

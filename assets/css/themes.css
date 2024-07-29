@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+
+.theme-light {
+    --background: #fefeff;
+    --background-secondary: #f7f7f8;
+    --foreground: #313131;
+    --foreground-secondary: #494949;
+    --highlight: #474dd6;
+    --highlight-secondary: #6a6fe0;
+}
+
+.theme-paper {
+    --background: #f1e7d0;
+    --background-secondary: #e9d9be;
+    --foreground: #433422;
+    --foreground-secondary: #5a4836;
+    --highlight: #8d7d69;
+    --highlight-secondary: #a49584;
+}
+
+.theme-dark {
+    --background: #1e1e1e;
+    --background-secondary: #2a2a2a;
+    --foreground: #c9c7b3;
+    --foreground-secondary: #d4d2c2;
+    --highlight: #72716d;
+    --highlight-secondary: #898883;
+}
+
+.theme-desert {
+    --background: #332a2c;
+    --background-secondary: #403437;
+    --foreground: #cfa476;
+    --foreground-secondary: #d8b491;
+    --highlight: #89602f;
+    --foreground-secondary: #a07546;
+}
+
+.theme-ocean {
+    --background: #06273a;
+    --background-secondary: #0d3449;
+    --foreground: #128898;
+    --foreground-secondary: #1a9fb0;
+    --highlight: #176477;
+    --highlight-secondary: #125b6e;
+}
+
+.theme-forest {
+    --background: #052529;
+    --background-secondary: #0c3236;
+    --foreground: #129878;
+    --foreground-secondary: #1aab89;
+    --highlight: #0b5e50;
+    --highlight-secondary: #127162;
+}
+
+.font-sans {
+    --font-type-adj: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+}
+
+.font-serif {
+    --font-type-adj: "Merriweather", Georgia, "Times New Roman", Times, serif;
+}
+
+.font-mono {
+    --font-type-adj: "JetBrains Mono", Consolas, "Courier New", monospace;
+}
+
+.size-sm {
+    --size-adj: 1.125rem;
+    --size-adj-line-height: 1.75rem;
+}
+
+.size-md {
+    --size-adj: 1.25rem;
+    --size-adj-line-height: 1.75rem;
+}
+
+.size-lg {
+    --size-adj: 1.375rem;
+    --size-adj-line-height: 1.75rem;
+}

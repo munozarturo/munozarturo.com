@@ -13,8 +13,8 @@
             </div>
         </div>
         <ProseH1>{{ page.title }}</ProseH1>
-        <h2 class="text-3xl font-bold text-tertiary">{{ page.subtitle }}</h2>
-        <div class="flex fex-row space-x-2 text-tertiary">
+        <h2 class="text-3xl font-bold text-highlight">{{ page.subtitle }}</h2>
+        <div class="flex fex-row space-x-2 text-highlight">
             <p v-for="tag in page.tags">#{{ tag }}</p>
         </div>
         <div v-if="page.banner" class="w-full h-auto">

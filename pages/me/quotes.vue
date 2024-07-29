@@ -29,14 +29,14 @@
                     <p class="font-bold text-5xl">&rdquo;</p></span
                 >
                 <span class="flex flex-row items-center justify-between">
-                    <p class="text-sm text-tertiary">
+                    <p class="text-sm text-highlight">
                         {{ cursor + 1 }}/{{ quotes.length }}
                     </p>
                     <p v-if="quote.credit" class="text-xl italic font-bold">
                         &mdash; {{ quote.credit }}
                     </p>
                 </span>
-                <hr class="border-t border-tertiary my-4 mx-2" />
+                <hr class="border-t border-highlight my-4 mx-2" />
                 <span
                     v-if="quote.footnote"
                     class="w-full flex flex-row items-start justify-start"

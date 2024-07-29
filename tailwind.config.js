@@ -4,11 +4,27 @@ export default {
     theme: {
         extend: {
             colors: {
-                primary: "#C9C7B3",
-                secondary: "#1E1E1E",
-                tertiary: "#72716D",
+                foreground: "var(--foreground)",
+                background: "var(--background)",
+                highlight: "var(--highlight)",
+                "foreground-secondary": "var(--foreground-secondary)",
+                "background-secondary": "var(--background-secondary)",
+                "highlight-secondary": "var(--highlight-secondary)",
+            },
+            fontFamily: {
+                themed: "var(--font-type-adj)",
             },
         },
     },
-    plugins: [],
+    plugins: [
+        function ({ addUtilities }) {
+            const newUtilities = {
+                ".text-adj": {
+                    "font-size": "var(--size-adj)",
+                    "line-height": "var(--size-adj-line-height)",
+                },
+            };
+            addUtilities(newUtilities, ["responsive", "hover"]);
+        },
+    ],
 };

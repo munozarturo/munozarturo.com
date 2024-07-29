@@ -2,7 +2,7 @@
 @-moz-document url-prefix() {
     * {
         scrollbar-width: thin;
-        scrollbar-color: #72716d #1e1e1e;
+        scrollbar-color: var(--highlight) var(--background);
     }
 }
 
@@ -12,14 +12,14 @@
 }
 
 ::-webkit-scrollbar-track {
-    background: #1e1e1e;
+    background: var(--background);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #72716d;
+    background: var(--highlight);
     border-radius: 2px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #c9c7b3;
+    background: var(--foreground);
 }
