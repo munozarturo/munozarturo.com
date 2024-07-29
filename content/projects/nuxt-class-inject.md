@@ -28,9 +28,9 @@ The issue was, you can&mdash;t do this in NuxtJS&mdash;or at least not to my kno
 
 You of course, could use a module like `@nuxtjs/color-mode` (a module that heavily inspired this project) but this module only allows you to change one CSS class. Which didn't *exactly* work for me because I also wanted to change the font type and the font size for accessibility reasons. Which means that I would either have to register 54 CSS classes and set user preferences through a single class, botch something together by using `@nuxtjs/color-mode` not as intended, or... make my own module.
 
-Now, even though the last solution was obviously the most time consuming&mdash;I swear to god it was calling my name. So almost 30 hours of work later, I now only have to set 12 CSS classes. That&lsquo;s almost 1 CSS class *less* per hour of work. Worth it if you ask me.
+Now, even though the last solution was obviously the most time consuming&mdash;I swear to god it was calling my name. So 30 hours of work later, I now only have to set 12 CSS classes. That&lsquo;s like 1 CSS class *less* per hour of work. Totally worth it.
 
-In all seriousness, that&lsquo;s not the reason I made it. It was mostly because it&lsquo;s a pretty good excuse to make a Nuxt module while keeping it pretty easy&mdash;I ripped off `@nuxtjs/color-mode` so hard. So now, if and when I want to make my own Nuxt module. I will know how. Well... I will kinda sorta know how.
+In all seriousness though, it was a pretty good excuse to make a Nuxt module while keeping it pretty easy&mdash;I ripped off `@nuxtjs/color-mode` *a lot*. So now, if and when I want to make my own Nuxt module. I will know how. Well... I will kinda sorta know how&mdash;it depends, I don&lsquo;t know what future me is trying to make.
 
 Also, to be fair, it&lsquo;s a pretty fucking cool module... like common, CSS class injection pre-client rendering! In this economy, that&lsquo;s a steal.
 
