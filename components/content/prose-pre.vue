@@ -1,7 +1,7 @@
 <template>
-    <div class="text-md flex flex-col mx-2 bg-background-secondary rounded-md">
+    <div class="text-md flex flex-col mx-2 bg-foreground-secondary rounded-md">
         <div
-            class="w-full h-fit flex flex-row items-center justify-between px-4 pt-2 pb-1.5"
+            class="w-full h-fit flex flex-row text-background-secondary items-center justify-between px-4 pt-2 pb-1.5"
         >
             <p class="font-bold">
                 {{ language }}
@@ -12,7 +12,7 @@
         </div>
         <pre
             ref="codeBlock"
-            class="w-full h-fit font-mono px-4 py-6 bg-[#272822] overflow-x-auto rounded-md"
+            class="w-full h-fit font-mono px-4 py-6 bg-background-secondary overflow-x-auto rounded-md"
         ><slot/></pre>
     </div>
 </template>

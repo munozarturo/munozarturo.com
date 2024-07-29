@@ -11,7 +11,7 @@
 
 .theme-paper {
     --background: #f1e7d0;
-    --background-secondary: #f5ede0;
+    --background-secondary: #e9d9be;
     --foreground: #433422;
     --foreground-secondary: #5a4836;
     --highlight: #8d7d69;
@@ -41,7 +41,7 @@
     --background-secondary: #0d3449;
     --foreground: #128898;
     --foreground-secondary: #1a9fb0;
-    --highlight: #0a4858;
+    --highlight: #176477;
     --highlight-secondary: #125b6e;
 }
 
