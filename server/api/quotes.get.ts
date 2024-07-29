@@ -62,6 +62,11 @@ export default defineEventHandler(async (event) => {
             credit: "Charles Schwab",
             footnote: "",
         },
+        {
+            quote: "To get good at something all you have to do is fuck up a lot, and fucking up is easy.",
+            credit: "",
+            footnote: "",
+        },
     ];
 
     return quotes;
