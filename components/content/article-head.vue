@@ -1,20 +1,29 @@
 <template>
     <div class="flex flex-col space-y-4 pb-2">
         <div class="flex flex-row justify-between text-md">
-            <span
-                >{{ formatDate(new Date(page.date)) }} &centerdot;
-                {{ estimateReadingTime(page.body) }} min read</span
-            >
+            <span class="flex flex-row gap-1">
+                <p v-if="page.date">
+                    {{ formatDate(new Date(page.date)) }}
+                </p>
+                <p v-if="page.date && page.body" class="font-bold">
+                    &centerdot;
+                </p>
+                <p v-if="page.body">
+                    {{ estimateReadingTime(page.body) }} min read
+                </p>
+            </span>
             <div class="flex flex-row space-x-2">
-                <a v-for="link in links" :href="link.href" target="_blank"
-                    ><Icon :name="link.icon"
-                /></a>
+                <a v-for="link in links" :href="link.href" target="_blank">
+                    <Icon :name="link.icon" />
+                </a>
                 <button @click="share"><Icon name="share" /></button>
             </div>
         </div>
-        <ProseH1>{{ page.title }}</ProseH1>
-        <h2 class="text-3xl font-bold text-highlight">{{ page.subtitle }}</h2>
-        <div class="flex fex-row space-x-2 text-highlight">
+        <ProseH1 v-if="page.title">{{ page.title }}</ProseH1>
+        <h2 v-if="page.subtitle" class="text-3xl font-bold text-highlight">
+            {{ page.subtitle }}
+        </h2>
+        <div v-if="page.tags" class="flex fex-row space-x-2 text-highlight">
             <p v-for="tag in page.tags">#{{ tag }}</p>
         </div>
         <div v-if="page.banner" class="w-full h-auto">
