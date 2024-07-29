@@ -33,6 +33,10 @@
 </template>
 
 <script setup>
+useHead({
+    title: "projects",
+});
+
 const { data: projects } = await useAsyncData("projects", () =>
     queryContent("projects").sort({ date: -1 }).find()
 );

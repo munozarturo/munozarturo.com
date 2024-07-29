@@ -176,6 +176,10 @@
 </template>
 
 <script setup lang="ts">
+useHead({
+    title: "me – resume",
+});
+
 const resume = await $fetch("/api/resume", { method: "GET" });
 
 const url = useRequestURL();

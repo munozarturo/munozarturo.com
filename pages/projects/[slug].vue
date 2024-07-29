@@ -16,4 +16,8 @@ const { path } = useRoute();
 const { data: page } = await useAsyncData(`content-${path}`, () =>
     queryContent().where({ _path: path }).findOne()
 );
+
+useHead({
+    title: `projects – ${page.value?.title}`,
+});
 </script>

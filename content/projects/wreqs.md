@@ -1,7 +1,7 @@
 ---
 title: "wreqs"
 subtitle: "wrapped requests in python."
-date: "2024-07-27T13:31:00"
+date: "2024-07-24T13:31:00"
 tags: ["python3"]
 links: [
     {

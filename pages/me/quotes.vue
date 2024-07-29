@@ -49,6 +49,10 @@
 </template>
 
 <script lang="ts" setup>
+useHead({
+    title: "me – quotes",
+});
+
 const quotes = (await $fetch("/api/quotes", { method: "GET" })) as unknown as {
     quote: string;
     credit: string;
