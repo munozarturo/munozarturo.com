@@ -9,7 +9,7 @@ export default defineNuxtConfig({
                 "theme-paper": "solarized-light",
                 "theme-dark": "monokai",
                 "theme-ocean": "solarized-dark",
-                "theme-desert": "vesper",
+                "theme-desert": "rose-pine-moon",
                 "theme-forest": "slack-dark",
             },
             langs: [
