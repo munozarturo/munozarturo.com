@@ -32,7 +32,7 @@
                             v-for="fontSize in fontSizes"
                             :key="fontSize"
                             @click="setFontSize(fontSize)"
-                            class="flex flex-col items-center justify-center p-2 rounded-md"
+                            class="flex flex-col items-center justify-center p-2 rounded-md select-none"
                             :class="{
                                 'bg-background': currentFontSize === fontSize,
                             }"
@@ -53,7 +53,7 @@
                             v-for="fontType in fontTypes"
                             :key="fontType"
                             @click="setFontType(fontType)"
-                            class="flex flex-col items-center justify-center w-14 p-2 rounded-md"
+                            class="flex flex-col items-center justify-center w-14 p-2 rounded-md select-none"
                             :class="{
                                 'bg-background': currentFontType === fontType,
                             }"
@@ -75,7 +75,7 @@
                             v-for="theme in themes"
                             :key="theme"
                             @click="setTheme(theme)"
-                            class="flex flex-col items-center justify-center w-16 p-2 rounded-md"
+                            class="flex flex-col items-center justify-center w-16 p-2 rounded-md select-none"
                             :class="{
                                 'bg-background': currentTheme === theme,
                             }"
