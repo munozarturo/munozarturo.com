@@ -4,7 +4,7 @@
             v-for="(square, index) in squares"
             :key="index"
             class="aspect-square transition-colors duration-1000 ease-in-out"
-            :class="{ 'bg-foreground': square }"
+            :class="{ 'bg-highlight': square }"
         ></div>
     </div>
 </template>
