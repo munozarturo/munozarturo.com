@@ -18,8 +18,8 @@
                 >
                     <div class="flex flex-row items-end justify-between">
                         <h1 class="text-4xl font-bold">{{ project.title }}</h1>
-                        <p>{{ formatDate(new Date(project.date)) }}</p>
                     </div>
+                    <p>{{ formatDate(new Date(project.date)) }}</p>
                     <h2 class="text-2xl font-bold text-highlight">
                         {{ project.subtitle }}
                     </h2>
