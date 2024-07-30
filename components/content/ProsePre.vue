@@ -3,7 +3,7 @@
         class="text-md relative flex flex-col mx-2 bg-background-secondary group rounded-md"
     >
         <div
-            class="w-full h-fit flex flex-row text-sm items-center justify-between px-4 pt-2 select-none"
+            class="w-full h-fit flex flex-row text-sm items-center justify-between px-4 pt-2 pb-1 select-none"
         >
             <p>
                 {{ language }}
@@ -11,10 +11,10 @@
         </div>
         <pre
             ref="codeBlock"
-            class="w-full h-fit font-mono px-4 pb-4 overflow-x-auto rounded-b-md"
+            class="w-full h-fit font-mono px-4 pb-8 overflow-x-auto rounded-b-md"
         ><slot/></pre>
         <button
-            class="absolute bottom-2 right-2 p-1 text-sm opacity-0 transition-opacity duration-200 group-hover:opacity-100 group-[.show-file-multi]:opacity-100"
+            class="absolute bottom-0.5 right-0.5 p-1 text-sm opacity-0 transition-opacity duration-200 text-foreground-secondary group-hover:opacity-100 group-[.show-file-multi]:opacity-100"
             @click="copy"
         >
             <Icon name="copy" class="stroke-current w-5 h-5" />
@@ -47,3 +47,25 @@ function copy(): void {
     }
 }
 </script>
+
+<style scoped>
+pre {
+    scrollbar-width: thin;
+    scrollbar-color: var(--foreground) transparent;
+}
+
+pre::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+pre::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+pre::-webkit-scrollbar-thumb {
+    background-color: var(--foreground);
+    border-radius: 20px;
+    border: 3px solid transparent;
+}
+</style>
