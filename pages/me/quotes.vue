@@ -1,9 +1,9 @@
 <template>
     <div
-        class="w-2/3 lg:w-1/2 xl:w-1/3 flex flex-col items-center justify-center pt-48 space-y-6"
+        class="w-full h-[calc(100vh-4rem)] px-4 sm:w-2/3 lg:w-1/2 xl:w-1/3 flex flex-col-reverse md:flex-col items-center justify-center pb-[calc(4rem)] space-y-6"
     >
         <div
-            class="w-full flex flex-row space-x-2 items-center justify-between"
+            class="w-full flex flex-row space-x-2 items-center justify-between pt-4"
         >
             <button
                 @click="updateCursor(Math.floor(Math.random() * quotes.length))"
@@ -12,34 +12,41 @@
             </button>
             <div class="space-x-2">
                 <button @click="updateCursor(-1)">
-                    <Icon name="left-arrow" />
+                    <Icon name="left-arrow" class="w-6 h-6" />
                 </button>
                 <button @click="updateCursor(1)">
-                    <Icon name="right-arrow" />
+                    <Icon name="right-arrow" class="w-6 h-6" />
                 </button>
             </div>
         </div>
         <ClientOnly>
-            <div class="w-full space-y-2">
+            <div
+                class="w-full h-full md:h-fit flex flex-col justify-center space-y-2"
+            >
                 <span
                     class="flex flex-row w-full items-center justify-center space-x-4"
                 >
                     <p class="font-bold text-5xl">&ldquo;</p>
-                    <p class="text-2xl text-center">{{ quote.quote }}</p>
+                    <p class="text-xl sm:text-2xl text-center">
+                        {{ quote.quote }}
+                    </p>
                     <p class="font-bold text-5xl">&rdquo;</p></span
                 >
                 <span class="flex flex-row items-center justify-between">
                     <p class="text-sm text-highlight">
                         {{ cursor + 1 }}/{{ quotes.length }}
                     </p>
-                    <p v-if="quote.credit" class="text-xl italic font-bold">
+                    <p
+                        v-if="quote.credit"
+                        class="text-lg md:text-xl italic font-bold"
+                    >
                         &mdash; {{ quote.credit }}
                     </p>
                 </span>
                 <hr class="border-t border-highlight my-4 mx-2" />
                 <span
                     v-if="quote.footnote"
-                    class="w-full flex flex-row items-start justify-start"
+                    class="w-full flex flex-row text-md sm:text-lg items-start justify-start"
                 >
                     <p>{{ quote.footnote }}</p>
                 </span>

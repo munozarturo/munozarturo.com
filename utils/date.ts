@@ -1,7 +1,5 @@
 function formatDate(date: Date): string {
     const formattedDate = date.toLocaleString("en-GB", {
-        hour: "numeric",
-        minute: "numeric",
         month: "short",
         day: "numeric",
         year: "numeric",
