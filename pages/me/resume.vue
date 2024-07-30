@@ -188,7 +188,7 @@ const toaster = useToasterStore();
 function share(): void {
     try {
         navigator.clipboard.writeText(url.toString());
-        toaster.addMessage("link Copied.", "success");
+        toaster.addMessage("link copied.", "success");
     } catch (e: any) {
         toaster.addMessage("failed to copy.", "error");
     }
