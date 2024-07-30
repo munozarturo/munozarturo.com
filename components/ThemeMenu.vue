@@ -4,11 +4,11 @@
             <Icon name="palette" class="w-6 h-6" />
         </button>
         <div
-            class="h-fit w-5/6 sm:w-1/2 lg:w-1/3 xl:w-1/5 fixed top-16 sm:top-16 right-8 lg:right-12 flex flex-col gap-2 bg-background-secondary text-foreground rounded-md transform transition-all duration-200 ease-in-out z-40 overflow-y-auto p-2"
+            class="h-fit w-5/6 sm:w-1/2 lg:w-1/3 xl:w-1/5 fixed top-20 right-0 flex flex-col gap-2 bg-background-secondary text-foreground rounded-l-md transform transition-all duration-200 ease-in-out z-40 overflow-y-auto p-2"
             :class="
                 showMenu
                     ? 'translate-x-0 opacity-100'
-                    : ' translate-x-[120%] opacity-0'
+                    : ' translate-x-full opacity-0'
             "
         >
             <div class="p-4 flex flex-col gap-4">
