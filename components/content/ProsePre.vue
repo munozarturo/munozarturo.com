@@ -38,12 +38,12 @@ function copy(): void {
         try {
             navigator.clipboard.writeText(codeBlock.value.textContent || "");
 
-            toaster.addMessage("Copied", "success");
+            toaster.addMessage("copied", "success");
         } catch (e: any) {
-            toaster.addMessage("Failed to copy.", "error");
+            toaster.addMessage("failed to copy.", "error");
         }
     } else {
-        toaster.addMessage("Nothing to copy.", "error");
+        toaster.addMessage("nothing to copy.", "error");
     }
 }
 </script>

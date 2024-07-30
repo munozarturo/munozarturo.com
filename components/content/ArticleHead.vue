@@ -61,9 +61,9 @@ const links = computed(
 function share(): void {
     try {
         navigator.clipboard.writeText(url.toString());
-        toaster.addMessage("Link Copied.", "success");
+        toaster.addMessage("link copied.", "success");
     } catch (e: any) {
-        toaster.addMessage("Failed to copy.", "error");
+        toaster.addMessage("failed to copy.", "error");
     }
 }
 
