@@ -30,8 +30,13 @@
                     >
                         {{ article.subtitle }}
                     </h2>
-                    <div class="flex fex-row space-x-2 text-highlight">
-                        <p v-for="tag in article.tags">#{{ tag }}</p>
+                    <div class="flex flex-wrap gap-2 text-highlight">
+                        <span
+                            v-for="tag in article.tags"
+                            class="whitespace-nowrap"
+                        >
+                            #{{ tag }}
+                        </span>
                     </div>
                 </NuxtLink>
             </li>
