@@ -24,7 +24,10 @@
                             {{ article.title }}
                         </h1>
                     </div>
-                    <p v-if="article.date" class="text-sm sm:text-md">
+                    <p
+                        v-if="article.date"
+                        class="text-sm sm:text-md lg:text-lg"
+                    >
                         {{ formatDate(new Date(article.date)) }}
                     </p>
                     <h2
