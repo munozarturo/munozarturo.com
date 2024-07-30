@@ -1,7 +1,7 @@
 <template>
-    <div class="flex flex-col space-y-4 pb-2">
+    <div class="flex flex-col gap-2 pb-2">
         <div class="flex flex-row justify-between text-md">
-            <span class="flex flex-row gap-1">
+            <span class="flex flex-row gap-1 text-sm sm:text-lg items-center">
                 <p v-if="article.date">
                     {{ formatDate(new Date(article.date)) }}
                 </p>
@@ -26,8 +26,10 @@
         >
             {{ article.subtitle }}
         </h2>
-        <div v-if="article.tags" class="flex fex-row space-x-2 text-highlight">
-            <p v-for="tag in article.tags">#{{ tag }}</p>
+        <div class="flex flex-wrap gap-2 text-highlight">
+            <span v-for="tag in article.tags" class="whitespace-nowrap">
+                #{{ tag }}
+            </span>
         </div>
         <div v-if="article.banner" class="w-full h-auto">
             <img
