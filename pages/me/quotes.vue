@@ -20,9 +20,7 @@
             </div>
         </div>
         <ClientOnly>
-            <div
-                class="w-full h-full md:h-fit flex flex-col justify-center space-y-2"
-            >
+            <div class="w-full h-fit flex flex-col justify-center space-y-2">
                 <span
                     class="flex flex-row w-full items-center justify-center space-x-4"
                 >
