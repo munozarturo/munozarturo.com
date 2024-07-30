@@ -1,6 +1,6 @@
 <template>
     <div
-        class="w-full h-[calc(100vh-4rem)] px-4 sm:w-2/3 lg:w-1/2 xl:w-1/3 flex flex-col-reverse md:flex-col items-center justify-center pb-[calc(4rem)] space-y-6"
+        class="w-full pt-[calc(20vh)] sm:h-[calc(100vh-4rem)] sm:pt-0 px-4 sm:w-2/3 lg:w-1/2 xl:w-1/3 flex flex-col-reverse md:flex-col items-center justify-center pb-[calc(4rem)] space-y-6"
     >
         <div
             class="w-full flex flex-row space-x-2 items-center justify-between pt-4"
