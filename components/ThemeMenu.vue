@@ -4,7 +4,7 @@
             <Icon name="palette" class="w-6 h-6" />
         </button>
         <div
-            class="fixed top-24 right-12 w-1/5 rounded-md bg-background-secondary h-fit transform transition-all duration-700 ease-in-out z-40 overflow-y-auto"
+            class="h-fit w-5/6 sm:w-1/2 lg:w-1/3 xl:w-1/5 fixed top-16 sm:top-16 right-8 lg:right-12 flex flex-col gap-2 bg-background-secondary text-foreground rounded-md transform transition-all duration-200 ease-in-out z-40 overflow-y-auto p-2"
             :class="
                 showMenu
                     ? 'translate-x-0 opacity-100'

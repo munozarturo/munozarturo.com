@@ -8,7 +8,7 @@
                 class="relative group"
             >
                 <div
-                    class="hover-indicator absolute left-[-40px] top-1/2 transform -translate-y-1/2 text-5xl font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-700 ease-in-out pointer-events-none"
+                    class="hover-indicator absolute left-[-40px] top-1/2 transform -translate-y-1/2 text-5xl font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-200 ease-in-out pointer-events-none"
                 >
                     <Icon name="right-arrow" />
                 </div>

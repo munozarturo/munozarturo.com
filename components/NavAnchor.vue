@@ -1,7 +1,7 @@
 <template>
     <a
         v-bind="$attrs"
-        class="font-semibold text-lg rounded-md transition-colors duration-300 ease-in-out py-1 px-2"
+        class="font-semibold text-lg rounded-md transition-colors duration-200 ease-in-out py-1 px-2"
         :class="{ 'bg-foreground text-background': isActive }"
         :href="href"
     >

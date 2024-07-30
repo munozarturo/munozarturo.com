@@ -1,7 +1,7 @@
 <template>
     <div
         v-if="mounted"
-        class="fixed bottom-24 right-48 transition-opacity duration-700 ease-in-out"
+        class="fixed bottom-24 right-48 transition-opacity duration-200 ease-in-out"
         :class="{
             'opacity-0 pointer-events-none': !showButton,
             'opacity-100': showButton,
