@@ -1,21 +1,15 @@
 <template>
-    <article v-if="page" class="w-full px-4 max-w-[768px] pt-8">
-        <!-- <TableOfContents :page="page" /> -->
-        <ScrollToTop />
-        <ArticleHead :page="page" />
-        <ContentRenderer :value="page" class="space-y-6 pb-16">
-            <template #empty>
-                <p>No content found.</p>
-            </template>
-        </ContentRenderer>
-    </article>
+    <Article :article="page" />
 </template>
 
 <script setup lang="ts">
+import type { Article } from "~/types";
+
 const { path } = useRoute();
-const { data: page } = await useAsyncData(`content-${path}`, () =>
+const { data } = await useAsyncData(`content-${path}`, () =>
     queryContent().where({ _path: path }).findOne()
 );
+const page = data as unknown as Ref<Article>;
 
 useHead({
     title: `projects – ${page.value?.title}`,

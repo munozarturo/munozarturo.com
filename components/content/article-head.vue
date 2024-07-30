@@ -2,14 +2,14 @@
     <div class="flex flex-col space-y-4 pb-2">
         <div class="flex flex-row justify-between text-md">
             <span class="flex flex-row gap-1">
-                <p v-if="page.date">
-                    {{ formatDate(new Date(page.date)) }}
+                <p v-if="article.date">
+                    {{ formatDate(new Date(article.date)) }}
                 </p>
-                <p v-if="page.date && page.body" class="font-bold">
+                <p v-if="article.date && article.body" class="font-bold">
                     &centerdot;
                 </p>
-                <p v-if="page.body">
-                    {{ estimateReadingTime(page.body) }} min read
+                <p v-if="article.body">
+                    {{ estimateReadingTime(article.body) }} min read
                 </p>
             </span>
             <div class="flex flex-row space-x-2">
@@ -19,32 +19,38 @@
                 <button @click="share"><Icon name="share" /></button>
             </div>
         </div>
-        <ProseH1 v-if="page.title">{{ page.title }}</ProseH1>
-        <h2 v-if="page.subtitle" class="text-3xl font-bold text-highlight">
-            {{ page.subtitle }}
+        <ProseH1 v-if="article.title">{{ article.title }}</ProseH1>
+        <h2 v-if="article.subtitle" class="text-3xl font-bold text-highlight">
+            {{ article.subtitle }}
         </h2>
-        <div v-if="page.tags" class="flex fex-row space-x-2 text-highlight">
-            <p v-for="tag in page.tags">#{{ tag }}</p>
+        <div v-if="article.tags" class="flex fex-row space-x-2 text-highlight">
+            <p v-for="tag in article.tags">#{{ tag }}</p>
         </div>
-        <div v-if="page.banner" class="w-full h-auto">
-            <img :src="page.banner" alt="Project Banner" class="rounded-md" />
+        <div v-if="article.banner" class="w-full h-auto">
+            <img
+                :src="article.banner"
+                alt="Project Banner"
+                class="rounded-md"
+            />
         </div>
     </div>
 </template>
 
 <script setup lang="ts">
+import type { Article } from "~/types";
+
 const url = useRequestURL();
 const toaster = useToasterStore();
 
 const props = defineProps({
-    page: {
-        type: Object,
+    article: {
+        type: Object as PropType<Article>,
         required: true,
     },
 });
 
 const links = computed(
-    () => props.page.links as { icon: string; href: string }[]
+    () => props.article.links as { icon: string; href: string }[]
 );
 
 function share(): void {

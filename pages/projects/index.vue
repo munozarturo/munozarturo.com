@@ -1,43 +1,16 @@
 <template>
-    <ScrollToTop />
-    <div class="w-full px-4 max-w-[768px] flex flex-col py-8">
-        <ul class="space-y-6">
-            <li
-                v-for="project in projects"
-                :key="project._path"
-                class="project-item relative group"
-            >
-                <div
-                    class="hover-indicator absolute left-[-40px] top-1/2 transform -translate-y-1/2 text-5xl font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-700 ease-in-out pointer-events-none"
-                >
-                    <Icon name="right-arrow" />
-                </div>
-                <NuxtLink
-                    :to="project._path"
-                    class="w-full h-fit flex flex-col"
-                >
-                    <div class="flex flex-row items-end justify-between">
-                        <h1 class="text-4xl font-bold">{{ project.title }}</h1>
-                    </div>
-                    <p>{{ formatDate(new Date(project.date)) }}</p>
-                    <h2 class="text-2xl font-bold text-highlight">
-                        {{ project.subtitle }}
-                    </h2>
-                    <div class="flex fex-row space-x-2 text-highlight">
-                        <p v-for="tag in project.tags">#{{ tag }}</p>
-                    </div>
-                </NuxtLink>
-            </li>
-        </ul>
-    </div>
+    <ArticleList :articles="projects" />
 </template>
 
-<script setup>
+<script setup lang="ts">
+import type { Article } from "~/types";
+
 useHead({
     title: "projects",
 });
 
-const { data: projects } = await useAsyncData("projects", () =>
+const { data } = await useAsyncData("projects", () =>
     queryContent("projects").sort({ date: -1 }).find()
 );
+const projects = data as unknown as Ref<Article[]>;
 </script>
