@@ -17,16 +17,19 @@
                     class="w-full h-fit flex flex-col"
                 >
                     <div class="flex flex-row items-end justify-between">
-                        <h1 v-if="article.title" class="text-4xl font-bold">
+                        <h1
+                            v-if="article.title"
+                            class="text-3xl sm:text-4xl font-bold"
+                        >
                             {{ article.title }}
                         </h1>
                     </div>
-                    <p v-if="article.date">
+                    <p v-if="article.date" class="text-sm sm:text-md">
                         {{ formatDate(new Date(article.date)) }}
                     </p>
                     <h2
                         v-if="article.subtitle"
-                        class="text-2xl font-bold text-highlight"
+                        class="text-xl sm:text-2xl font-bold text-highlight"
                     >
                         {{ article.subtitle }}
                     </h2>

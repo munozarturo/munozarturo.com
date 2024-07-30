@@ -20,7 +20,10 @@
             </div>
         </div>
         <ProseH1 v-if="article.title">{{ article.title }}</ProseH1>
-        <h2 v-if="article.subtitle" class="text-3xl font-bold text-highlight">
+        <h2
+            v-if="article.subtitle"
+            class="text-2xl sm:text-3xl font-bold text-highlight"
+        >
             {{ article.subtitle }}
         </h2>
         <div v-if="article.tags" class="flex fex-row space-x-2 text-highlight">
