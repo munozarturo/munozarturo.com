@@ -1,4 +1,5 @@
 <template>
+    <ScrollToTop />
     <div class="w-full px-4 max-w-[768px] flex flex-col space-y-4 pt-8 pb-12">
         <div class="w-full items-center justify-end flex flex-row space-x-2">
             <div class="w-full flex flex-row justify-between text-md">
@@ -47,7 +48,7 @@
                         <p class="italic">{{ edu.degree }}</p>
                         <p>{{ edu.location }}</p>
                     </span>
-                    <ul class="list-disc pl-8">
+                    <ul class="list-disc pl-4 sm:pl-6 md:pl-8">
                         <li>
                             <span class="flex flex-row">
                                 <p>
@@ -74,7 +75,7 @@
                         <p class="italic">{{ exp.title }}</p>
                         <p>{{ exp.location }}</p>
                     </span>
-                    <ul class="list-disc pl-8">
+                    <ul class="list-disc pl-4 sm:pl-6 md:pl-8">
                         <li v-for="responsibility in exp.responsibilities">
                             {{ responsibility }}
                         </li>
@@ -85,7 +86,7 @@
             <section>
                 <h2 class="text-lg sm:text-xl font-bold">Skills</h2>
                 <hr class="border-t border-highlight" />
-                <ul class="pl-8">
+                <ul class="pl-4 sm:pl-6 md:pl-8">
                     <li>
                         <p>
                             <span class="font-bold">Programming Languages:</span
@@ -133,7 +134,7 @@
                 <hr class="border-t border-highlight" />
                 <div v-for="project in resume.projects">
                     <div class="flex flex-col sm:flex-row justify-between">
-                        <span class="flex flex-col sm:flex-row space-x-1">
+                        <span class="flex flex-col sm:flex-row">
                             <div class="flex flex-row gap-1">
                                 <h3 class="font-bold">{{ project.name }}</h3>
                                 <a
@@ -151,13 +152,13 @@
                             >
                                 &nbsp;|
                             </p>
-                            <p class="italic">
+                            <p>
                                 {{ project.technologies.join(", ") }}
                             </p>
                         </span>
                         <p class="font-bold">{{ project.dates }}</p>
                     </div>
-                    <ul class="list-disc pl-8">
+                    <ul class="list-disc pl-4 sm:pl-6 md:pl-8">
                         <li v-for="responsibility in project.responsibilities">
                             {{ responsibility }}
                         </li>
@@ -173,7 +174,7 @@
                         <h3 class="font-bold">{{ com.title }}</h3>
                         <p class="font-bold">{{ com.dates }}</p>
                     </span>
-                    <ul class="list-disc pl-8">
+                    <ul class="list-disc pl-4 sm:pl-6 md:pl-8">
                         <li v-for="responsibility in com.responsibilities">
                             {{ responsibility }}
                         </li>
