@@ -18,9 +18,11 @@
         </div>
 
         <div class="flex flex-col space-y-2">
-            <h1 class="text-4xl text-center font-bold">{{ resume.title }}</h1>
+            <h1 class="text-3xl sm:text-4xl text-center font-bold">
+                {{ resume.title }}
+            </h1>
             <div
-                class="flex flex-row flex-wrap items-center justify-center space-x-4"
+                class="text-md flex flex-row flex-wrap items-center justify-center space-x-4"
             >
                 <a
                     v-for="link in resume.links"
@@ -34,14 +36,14 @@
             </div>
 
             <section>
-                <h2 class="text-xl font-bold">Education</h2>
+                <h2 class="text-lg sm:text-xl font-bold">Education</h2>
                 <hr class="border-t border-highlight" />
-                <div v-for="edu in resume.education">
-                    <span class="flex flex-row justify-between">
+                <div v-for="edu in resume.education" class="text-md">
+                    <span class="flex flex-col sm:flex-row justify-between">
                         <h3 class="font-bold">{{ edu.institution }}</h3>
                         <p class="font-bold">{{ edu.dates }}</p></span
                     >
-                    <span class="flex flex-row justify-between">
+                    <span class="flex flex-col sm:flex-row justify-between">
                         <p class="italic">{{ edu.degree }}</p>
                         <p>{{ edu.location }}</p>
                     </span>
@@ -61,14 +63,14 @@
             </section>
 
             <section>
-                <h2 class="text-xl font-bold">Experience</h2>
+                <h2 class="text-lg sm:text-xl font-bold">Experience</h2>
                 <hr class="border-t border-highlight" />
                 <div v-for="exp in resume.experience">
-                    <span class="flex flex-row justify-between">
+                    <span class="flex flex-col sm:flex-row justify-between">
                         <h3 class="font-bold">{{ exp.company }}</h3>
                         <p class="font-bold">{{ exp.dates }}</p></span
                     >
-                    <span class="flex flex-row justify-between">
+                    <span class="flex flex-col sm:flex-row justify-between">
                         <p class="italic">{{ exp.title }}</p>
                         <p>{{ exp.location }}</p>
                     </span>
@@ -81,7 +83,7 @@
             </section>
 
             <section>
-                <h2 class="text-xl font-bold">Skills</h2>
+                <h2 class="text-lg sm:text-xl font-bold">Skills</h2>
                 <hr class="border-t border-highlight" />
                 <ul class="pl-8">
                     <li>
@@ -121,25 +123,32 @@
                     <a href="/projects">
                         <span
                             class="flex flex-row items-center justify-center space-x-1"
-                            ><h2 class="text-xl font-bold">Projects</h2>
+                            ><h2 class="text-lg sm:text-xl font-bold">
+                                Projects
+                            </h2>
                             <Icon name="export" class="w-4 h-4" />
                         </span>
                     </a>
                 </div>
                 <hr class="border-t border-highlight" />
                 <div v-for="project in resume.projects">
-                    <div class="flex flex-row justify-between">
-                        <span class="flex flex-row items-center space-x-1"
-                            ><h3 class="font-bold">{{ project.name }}</h3>
-                            <a
-                                v-for="link in project.links"
-                                :href="link.href"
-                                target="_blank"
-                                class="flex flex-row items-center justify-center"
+                    <div class="flex flex-col sm:flex-row justify-between">
+                        <span class="flex flex-col sm:flex-row space-x-1">
+                            <div class="flex flex-row gap-1">
+                                <h3 class="font-bold">{{ project.name }}</h3>
+                                <a
+                                    v-for="link in project.links"
+                                    :href="link.href"
+                                    target="_blank"
+                                    class="flex flex-row items-center justify-center"
+                                >
+                                    <Icon :name="link.icon" class="w-4 h-4" />
+                                </a>
+                            </div>
+                            <p
+                                v-if="project.technologies.length > 0"
+                                class="hidden sm:block"
                             >
-                                <Icon :name="link.icon" class="w-4 h-4" />
-                            </a>
-                            <p v-if="project.technologies.length > 0">
                                 &nbsp;|
                             </p>
                             <p class="italic">
@@ -157,10 +166,10 @@
             </section>
 
             <section>
-                <h2 class="text-xl font-bold">Community</h2>
+                <h2 class="text-lg sm:text-xl font-bold">Community</h2>
                 <hr class="border-t border-highlight" />
                 <div v-for="com in resume.community">
-                    <span class="flex flex-row justify-between">
+                    <span class="flex flex-col sm:flex-row justify-between">
                         <h3 class="font-bold">{{ com.title }}</h3>
                         <p class="font-bold">{{ com.dates }}</p>
                     </span>
