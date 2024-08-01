@@ -8,12 +8,12 @@
             </div>
             <div class="flex flex-row gap-4">
                 <div
-                    class="hidden sm:flex flex-row gap-2 w-full items-center overflow-visible"
+                    class="hidden sm:flex flex-row w-full items-center overflow-visible"
                 >
                     <a
                         v-for="link in navLinks"
                         :href="link.href"
-                        class="w-fit h-fit font-semibold text-lg rounded-md transition-colors duration-200 ease-in-out px-2 hover:bg-background-secondary"
+                        class="w-fit h-fit font-semibold text-lg rounded-md transition-colors duration-200 ease-in-out px-3 hover:bg-background-secondary"
                     >
                         {{ link.label }}
                     </a>
@@ -26,7 +26,7 @@
                 </button>
             </div>
             <div
-                class="h-fit w-1/2 sm:w-1/2 lg:w-1/3 xl:w-1/5 fixed top-20 right-0 flex flex-col gap-2 bg-background-secondary text-foreground rounded-l-md transform transition-all duration-200 ease-in-out z-40 overflow-y-auto p-2"
+                class="h-fit w-1/2 sm:w-1/2 lg:w-1/3 xl:w-1/5 fixed top-20 right-0 flex flex-col bg-background-secondary text-foreground rounded-l-md transform transition-all duration-200 ease-in-out z-40 overflow-y-auto p-2"
                 :class="
                     showMobileMenu
                         ? 'translate-x-0 opacity-100'
