@@ -14,7 +14,7 @@
             class="w-full h-fit font-mono px-4 pb-8 overflow-x-auto rounded-b-md"
         ><slot/></pre>
         <button
-            class="absolute bottom-0.5 right-0.5 p-1 text-sm opacity-0 transition-opacity duration-200 text-foreground-secondary group-hover:opacity-100 group-[.show-file-multi]:opacity-100 hover:text-highlight flex flex-row items-center justify-center gap-1"
+            class="absolute bottom-0.5 right-0.5 p-1 text-sm opacity-0 transition-opacity duration-200 text-foreground-secondary group-hover:opacity-100 group-[.pre]:opacity-100 hover:text-highlight flex flex-row items-center justify-center gap-1"
             @click="copy"
         >
             <Icon name="copy" class="stroke-current w-5 h-5" />
