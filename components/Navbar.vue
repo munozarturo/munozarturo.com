@@ -14,6 +14,7 @@
                         v-for="link in navLinks"
                         :href="link.href"
                         class="w-fit h-fit font-semibold text-lg rounded-md transition-colors duration-200 ease-in-out px-3 hover:bg-background-secondary"
+                        :class="{ 'text-highlight': route.path === link.href }"
                     >
                         {{ link.label }}
                     </a>
@@ -38,6 +39,7 @@
                         v-for="link in navLinks"
                         :href="link.href"
                         class="text-xl font-bold p-2 hover:bg-background rounded-md transition-colors duration-200"
+                        :class="{ 'text-highlight': route.path === link.href }"
                         >{{ link.label }}</a
                     >
                 </div>
@@ -52,6 +54,8 @@
 </template>
 
 <script setup lang="ts">
+const route = useRoute();
+
 const showMobileMenu = ref<boolean>(false);
 
 const navLinks = [
