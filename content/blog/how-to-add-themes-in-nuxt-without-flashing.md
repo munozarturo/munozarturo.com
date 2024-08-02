@@ -1,7 +1,7 @@
 ---
 title: "how to add themes in Nuxt3 without flashing"
 subtitle: "using nuxt-class-inject for dynamic styling."
-date: "2024-08-29T14:33:00"
+date: "2024-07-29T14:33:00"
 tags: ["nuxt3", "nuxt-class-inject", "tailwnd-css"]
 links: [
     {
