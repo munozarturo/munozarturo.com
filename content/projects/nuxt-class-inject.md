@@ -5,7 +5,7 @@ date: "2024-07-28T20:39:00"
 tags: ["nuxt-js", "module", "typescript", "css", "nitro"]
 links: [
     {
-        "icon": "javascript",
+        "icon": "npmjs",
         "href": "https://www.npmjs.com/package/nuxt-class-inject",
     },
     {
