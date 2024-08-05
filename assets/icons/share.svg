@@ -1,19 +1,18 @@
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path
-        d="M21.7692 5.07436C21.7692 6.76047 20.4663 8.05784 18.9432 8.05784C17.42 8.05784 16.1171 6.76047 16.1171 5.07436C16.1171 3.38825 17.42 2.09088 18.9432 2.09088C20.4663 2.09088 21.7692 3.38825 21.7692 5.07436Z"
-        stroke="currentColor" stroke-width="2" />
-    <path
-        d="M7.42146 10.0537C7.42146 11.7398 6.11857 13.0372 4.59537 13.0372C3.07218 13.0372 1.76929 11.7398 1.76929 10.0537C1.76929 8.36759 3.07218 7.07022 4.59537 7.07022C6.11857 7.07022 7.42146 8.36759 7.42146 10.0537Z"
-        stroke="currentColor" stroke-width="2" />
-    <path
-        d="M21.7692 19.0165C21.7692 20.7026 20.4663 22 18.9432 22C17.42 22 16.1171 20.7026 16.1171 19.0165C16.1171 17.3304 17.42 16.0331 18.9432 16.0331C20.4663 16.0331 21.7692 17.3304 21.7692 19.0165Z"
-        stroke="currentColor" stroke-width="2" />
-    <line y1="-1" x2="12.6215" y2="-1"
-        transform="matrix(-0.833634 -0.552317 0.521518 -0.85324 17.0302 18.0207)"
-        stroke="currentColor"
-        stroke-width="2" />
-    <line y1="-1" x2="10.0209" y2="-1"
-        transform="matrix(-0.954523 0.298137 -0.276881 -0.960904 16.0736 5.07437)"
-        stroke="currentColor"
-        stroke-width="2" />
-</svg>
+    <g clip-path="url(#clip0_843_1451)">
+        <circle cx="19.5" cy="4.5" r="3.5" stroke="currentColor" stroke-width="2" />
+        <circle cx="4.5" cy="9.5" r="3.5" stroke="currentColor" stroke-width="2" />
+        <circle cx="19.5" cy="19.5" r="3.5" stroke="currentColor" stroke-width="2" />
+        <line y1="-1.25" x2="10.852" y2="-1.25"
+            transform="matrix(-0.833634 -0.552317 0.521518 -0.85324 17.0466 16.9937)"
+            stroke="currentColor" stroke-width="2.5" />
+        <line y1="-1.25" x2="8.79356" y2="-1.25"
+            transform="matrix(-0.954523 0.298137 -0.276881 -0.960904 15.3936 4.36594)"
+            stroke="currentColor" stroke-width="2.5" />
+    </g>
+    <defs>
+        <clipPath id="clip0_843_1451">
+            <rect width="24" height="24" fill="white" />
+        </clipPath>
+    </defs>
+</svg>    
