@@ -7,7 +7,10 @@
             'opacity-100': showButton,
         }"
     >
-        <button @click="scrollToTop">
+        <button
+            @click="scrollToTop"
+            class="p-1.5 rounded-sm hover:bg-background-secondary transition-colors duration-200 flex flex-row items-center justify-center"
+        >
             <Icon name="arrow-up" class="w-6 h-6" />
         </button>
     </div>
