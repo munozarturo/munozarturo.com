@@ -32,9 +32,10 @@
                             v-for="fontSize in fontSizes"
                             :key="fontSize"
                             @click="setFontSize(fontSize)"
-                            class="flex flex-col items-center justify-center p-2 rounded-md select-none"
+                            class="flex flex-col items-center justify-center p-2 rounded-md select-none transition-colors duration-200 hover:bg-background"
                             :class="{
-                                'bg-background': currentFontSize === fontSize,
+                                'bg-background text-highlight':
+                                    currentFontSize === fontSize,
                             }"
                         >
                             <p class="text-md">
@@ -53,9 +54,10 @@
                             v-for="fontType in fontTypes"
                             :key="fontType"
                             @click="setFontType(fontType)"
-                            class="flex flex-col items-center justify-center w-14 p-2 rounded-md select-none"
+                            class="flex flex-col items-center justify-center w-14 p-2 rounded-md select-none transition-colors duration-200 hover:bg-background"
                             :class="{
-                                'bg-background': currentFontType === fontType,
+                                'bg-background text-highlight':
+                                    currentFontType === fontType,
                             }"
                         >
                             <Icon :name="fontType" class="w-8 h-8" />
@@ -75,9 +77,10 @@
                             v-for="theme in themes"
                             :key="theme"
                             @click="setTheme(theme)"
-                            class="flex flex-col items-center justify-center w-16 p-2 rounded-md select-none"
+                            class="flex flex-col items-center justify-center w-16 p-2 rounded-md select-none transition-colors duration-200 hover:bg-background"
                             :class="{
-                                'bg-background': currentTheme === theme,
+                                'bg-background text-highlight':
+                                    currentTheme === theme,
                             }"
                         >
                             <Icon :name="theme" class="w-12 h-12" />
