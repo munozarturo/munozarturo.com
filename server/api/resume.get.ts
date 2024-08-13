@@ -122,8 +122,9 @@ export default defineEventHandler(async (event) => {
                 dates: "May 2024 — Present",
                 location: "Remote",
                 responsibilities: [
-                    "Maintain a robust cloud data pipeline that processes data daily, ensuring seamless data flow and building data collections that serve over 500,000 users per month",
-                    "Developed a RAG (Retrieval-Augmented Generation) chatbot for premium users, built on the entire company's knowledge base",
+                    "Maintain an Apache Airflow cloud data pipeline serving over 500,000 users per month",
+                    "Developed a RAG (Retrieval-Augmented Generation) chatbot for premium users built on the company's knowledge base",
+                    "Resolve diverse technical challenges across multiple projects, improving developer and user experience",
                 ],
             },
             {
@@ -172,43 +173,43 @@ export default defineEventHandler(async (event) => {
         },
         projects: [
             {
-                name: "whizfile.com",
+                name: "wreqs",
                 links: [
                     {
                         icon: "globe",
-                        href: "https://whizfile.com",
+                        href: "https://pypi.org/project/wreqs/",
                     },
                     {
                         icon: "github",
-                        href: "https://github.com/munozarturo/whizfile.com",
-                    },
-                ],
-                technologies: ["Next.js", "MongoDB", "AWS (S3, SDK)"],
-                dates: "Oct. 2023 — Jan. 2024",
-                responsibilities: [
-                    "Designed a file transfer service architecture to optimize for speed, security, and customizability",
-                    "Built and designed the front-end using Figma, Next.js, TypeScript, and TailwindCSS",
-                    "Engineered a RESTful back-end using Next.js routing, MongoDB, and AWS S3",
-                ],
-            },
-            {
-                name: "vval.py",
-                links: [
-                    {
-                        icon: "globe",
-                        href: "https://pypi.org/project/vval/2.1.0/",
-                    },
-                    {
-                        icon: "github",
-                        href: "https://github.com/munozarturo/vval",
+                        href: "https://github.com/munozarturo/wreqs",
                     },
                 ],
                 technologies: ["Python"],
-                dates: "Oct. 2023",
+                dates: "Jul. 2024",
                 responsibilities: [
-                    "Developed a Python module for input validation, focusing on simplicity",
-                    "Implemented a variety of functions including basic type validation, iterable validation, option validation, and filter validation",
-                    "Designed to handle multiple data types and combinations, ensuring flexibility and comprehensive validation capabilities",
+                    "Developed a context manager for handling HTTP requests with built-in logging and retry handling",
+                    "Improved developer experience and efficiency in the company's data pipeline, potentially saving hundreds of hours",
+                    "Implemented features to enhance request handling in large-scale web scraping operations",
+                ],
+            },
+            {
+                name: "httpsauth",
+                links: [
+                    {
+                        icon: "globe",
+                        href: "https://httpsauth.munozarturo.com/",
+                    },
+                    {
+                        icon: "github",
+                        href: "https://github.com/munozarturo/httpsauth",
+                    },
+                ],
+                technologies: ["NuxtJS", "TypeScript", "PostgreSQL", "AWS SES"],
+                dates: "Jun. 2024",
+                responsibilities: [
+                    "Implemented a complete authentication system from scratch using NuxtJS 3 and TypeScript",
+                    "Developed features including REST HTTP API, email notifications, and password resets",
+                    "Integrated PostgreSQL for data storage and AWS SES for email functionality",
                 ],
             },
             {
