@@ -59,7 +59,7 @@ export default defineEventHandler(async (event) => {
     };
 
     const resume: Resume = {
-        date: new Date("2024-07-10T13:59:00"),
+        date: new Date(),
         title: "Arturo Muñoz",
         links: [
             {
@@ -99,7 +99,7 @@ export default defineEventHandler(async (event) => {
         education: [
             {
                 institution: "Case Western Reserve University (CWRU)",
-                dates: "Aug. 2022 — May 2026",
+                dates: "Aug. 2022 -- May 2026",
                 degree: "B.Sc. Computer Science (3.76 GPA); Minors: Mathematics, Business Management",
                 location: "Cleveland, OH",
                 courses: [
@@ -119,7 +119,7 @@ export default defineEventHandler(async (event) => {
             {
                 company: "The Block",
                 title: "Data Engineering Intern",
-                dates: "May 2024 — Present",
+                dates: "May 2024 -- Present",
                 location: "Remote",
                 responsibilities: [
                     "Maintain an Apache Airflow cloud data pipeline serving over 500,000 users per month",
@@ -130,23 +130,23 @@ export default defineEventHandler(async (event) => {
             {
                 company: "20 Minute Trader",
                 title: "Software Engineering Intern",
-                dates: "May 2022 — May 2023",
+                dates: "May 2022 -- May 2023",
                 location: "Mexico City, MX",
                 responsibilities: [
-                    "Engineered a robust Python3 framework for the development and back-testing of trading algorithms, streamlining the R&D process",
-                    "Refined 3 high-frequency trading algorithms in Python3, tailoring them for varying risk tolerance levels and underlying trading strategies, which led to enhanced trade accuracy and profitability",
-                    "Built and deployed a live trading system using Python3 and InteractiveBrokers WebSocket API, enabling real-time algorithmic trading",
+                    "Engineered a framework for the development and back-testing of trading algorithms",
+                    "Refined high-frequency trading algorithms for varying risk tolerance levels leading to enhanced trade accuracy and profitability",
+                    "Built and deployed a real-time trading system using Python3 and InteractiveBrokers WebSocket API",
                 ],
             },
             {
                 company: "CWRU University Technology Services",
                 title: "Endpoint Support Specialist",
-                dates: "May 2023 — Present",
+                dates: "May 2023 -- May 2024",
                 location: "Cleveland, OH",
                 responsibilities: [
-                    "Utilize a ticketing system (TeamDynamix) to resolve over 100 IT issues, serving as the first point of contact for faculty, staff, and students",
-                    "Develop documentation for specific recurring issues, leading to a 13% decrease in ticket resolution time",
-                    "Collaborate with vendors to resolve hardware issues and secure replacement parts",
+                    "Utilized a ticketing system to resolve over 100 IT issues, serving as the first point of contact for faculty, staff, and students",
+                    "Developed documentation for specific recurring issues, leading to a 13% decrease in ticket resolution time",
+                    "Collaborated with vendors to resolve hardware issues and secure replacement parts",
                 ],
             },
         ],
@@ -155,16 +155,10 @@ export default defineEventHandler(async (event) => {
                 "Python (3.6+)",
                 "TypeScript",
                 "JavaScript (ES6+)",
-                "Java",
                 "SQL",
             ],
-            frameworks: ["React", "Next.js", "Django"],
-            technologies: [
-                "PostgreSQL",
-                "MongoDB",
-                "AWS (SDK, S3, Lambda)",
-                "Figma",
-            ],
+            frameworks: ["Vue", "NuxtJS 3+", "React", "NextJS 13+"],
+            technologies: ["Airflow", "AWS (SDK, SES, S3, Lambda)", "Figma"],
             languages: [
                 "English (Native)",
                 "Spanish (Native)",
@@ -214,7 +208,7 @@ export default defineEventHandler(async (event) => {
             },
             {
                 name: "Inkori LLC Online Retail",
-                dates: "May 2023 — Aug. 2023",
+                dates: "May 2023 -- Aug. 2023",
                 technologies: [],
                 responsibilities: [
                     "Managed all aspects of the business, including product sourcing, inventory management, and customer service",
@@ -226,9 +220,9 @@ export default defineEventHandler(async (event) => {
         community: [
             {
                 title: "Collegiate Connections Mentor",
-                dates: "Aug. 2023 — Present",
+                dates: "Aug. 2023 -- Present",
                 responsibilities: [
-                    "Acting as a mentor in the Collegiate Connections Peer Mentoring Program, focusing on supporting first year underrepresented ELP, POSSE, and international students during their fall semester at CWRU",
+                    "Acting as a mentor in the Collegiate Connections Peer Mentoring Program, focusing on supporting first year underrepresented ELP, POSSE, and international students at CWRU",
                     "Conducting weekly one-on-one sessions to provide academic guidance in major-specific areas",
                     "Collaborating with a team of 141 members and officers to improve program effectiveness",
                 ],
