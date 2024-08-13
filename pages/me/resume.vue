@@ -6,14 +6,20 @@
                 <span>{{
                     formatDate(new Date(resume.date)).toLowerCase()
                 }}</span>
-                <div class="flex flex-row space-x-2">
+                <div class="flex flex-row">
                     <a
                         href="/files/munozarturo_resume.pdf"
                         download="munozarturo_resume.pdf"
+                        class="p-1 hover:bg-background-secondary transition-colors duration-200 rounded-sm flex flex-row items-center justify-center"
                     >
                         <Icon name="download" />
                     </a>
-                    <button @click="share"><Icon name="share" /></button>
+                    <button
+                        @click="share"
+                        class="p-1 hover:bg-background-secondary transition-colors duration-200 rounded-sm flex flex-row items-center justify-center"
+                    >
+                        <Icon name="share" />
+                    </button>
                 </div>
             </div>
         </div>
