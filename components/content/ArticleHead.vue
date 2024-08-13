@@ -12,11 +12,21 @@
                     {{ estimateReadingTime(article.body) }} min read
                 </p>
             </span>
-            <div class="flex flex-row space-x-2">
-                <a v-for="link in links" :href="link.href" target="_blank">
+            <div class="flex flex-row">
+                <a
+                    v-for="link in links"
+                    :href="link.href"
+                    target="_blank"
+                    class="p-1 hover:bg-background-secondary transition-colors duration-200 rounded-sm flex flex-row items-center justify-center"
+                >
                     <Icon :name="link.icon" />
                 </a>
-                <button @click="share"><Icon name="share" /></button>
+                <button
+                    @click="share"
+                    class="p-1 hover:bg-background-secondary transition-colors duration-200 rounded-sm flex flex-row items-center justify-center"
+                >
+                    <Icon name="share" />
+                </button>
             </div>
         </div>
         <ProseH1 v-if="article.title">{{ article.title }}</ProseH1>
