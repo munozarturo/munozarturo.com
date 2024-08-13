@@ -99,7 +99,7 @@ export default defineEventHandler(async (event) => {
         education: [
             {
                 institution: "Case Western Reserve University (CWRU)",
-                dates: "Aug. 2022 -- May 2026",
+                dates: "Aug. 2022 – May 2026",
                 degree: "B.Sc. Computer Science (3.76 GPA); Minors: Mathematics, Business Management",
                 location: "Cleveland, OH",
                 courses: [
@@ -119,7 +119,7 @@ export default defineEventHandler(async (event) => {
             {
                 company: "The Block",
                 title: "Data Engineering Intern",
-                dates: "May 2024 -- Present",
+                dates: "May 2024 – Present",
                 location: "Remote",
                 responsibilities: [
                     "Maintain an Apache Airflow cloud data pipeline serving over 500,000 users per month",
@@ -130,7 +130,7 @@ export default defineEventHandler(async (event) => {
             {
                 company: "20 Minute Trader",
                 title: "Software Engineering Intern",
-                dates: "May 2022 -- May 2023",
+                dates: "May 2022 – May 2023",
                 location: "Mexico City, MX",
                 responsibilities: [
                     "Engineered a framework for the development and back-testing of trading algorithms",
@@ -141,7 +141,7 @@ export default defineEventHandler(async (event) => {
             {
                 company: "CWRU University Technology Services",
                 title: "Endpoint Support Specialist",
-                dates: "May 2023 -- May 2024",
+                dates: "May 2023 – May 2024",
                 location: "Cleveland, OH",
                 responsibilities: [
                     "Utilized a ticketing system to resolve over 100 IT issues, serving as the first point of contact for faculty, staff, and students",
@@ -208,7 +208,7 @@ export default defineEventHandler(async (event) => {
             },
             {
                 name: "Inkori LLC Online Retail",
-                dates: "May 2023 -- Aug. 2023",
+                dates: "May 2023 – Aug. 2023",
                 technologies: [],
                 responsibilities: [
                     "Managed all aspects of the business, including product sourcing, inventory management, and customer service",
@@ -220,7 +220,7 @@ export default defineEventHandler(async (event) => {
         community: [
             {
                 title: "Collegiate Connections Mentor",
-                dates: "Aug. 2023 -- Present",
+                dates: "Aug. 2023 – Present",
                 responsibilities: [
                     "Acting as a mentor in the Collegiate Connections Peer Mentoring Program, focusing on supporting first year underrepresented ELP, POSSE, and international students at CWRU",
                     "Conducting weekly one-on-one sessions to provide academic guidance in major-specific areas",
