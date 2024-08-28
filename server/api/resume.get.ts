@@ -119,7 +119,7 @@ export default defineEventHandler(async (event) => {
             {
                 company: "The Block",
                 title: "Data Engineering Intern",
-                dates: "May 2024 – Present",
+                dates: "May 2024 – Aug 2024",
                 location: "Remote",
                 responsibilities: [
                     "Maintain an Apache Airflow cloud data pipeline serving over 500,000 users per month",
