@@ -165,6 +165,24 @@ export default defineEventHandler(async (event) => {
         },
         projects: [
             {
+                name: "nuxt-class-inject",
+                links: [
+                    {
+                        icon: "globe",
+                        href: "https://nuxt-class-inject.munozarturo.com/",
+                    },
+                    {
+                        icon: "github",
+                        href: "https://github.com/munozarturo/nuxt-class-inject",
+                    },
+                ],
+                technologies: ["TypeScript", "JavaScript", "Nitro", "NuxtJS"],
+                dates: "Jul. 2024",
+                responsibilities: [
+                    "Dynamic CSS class injection that beats client rendering.",
+                ],
+            },
+            {
                 name: "wreqs",
                 links: [
                     {
@@ -179,7 +197,7 @@ export default defineEventHandler(async (event) => {
                 technologies: ["Python"],
                 dates: "Jul. 2024",
                 responsibilities: [
-                    "Developed a context manager for handling HTTP requests for large scale web-scraping operations",
+                    "A Python context manager for HTTP request handling in large scale web-scraping operations",
                 ],
             },
             {
@@ -196,8 +214,38 @@ export default defineEventHandler(async (event) => {
                 ],
                 technologies: ["NuxtJS", "TypeScript", "PostgreSQL", "AWS SES"],
                 dates: "Jun. 2024",
+                responsibilities: ["Authentication over HTTP from scratch"],
+            },
+            {
+                name: "mockupforge",
+                links: [
+                    {
+                        icon: "github",
+                        href: "https://github.com/munozarturo/mockupforge",
+                    },
+                ],
+                technologies: ["Python", "Docker"],
+                dates: "May. 2024",
                 responsibilities: [
-                    "Implemented authentication over HTTP from scratch",
+                    "A containerized mockup generator running Flask and GIMP in a virtual machine",
+                ],
+            },
+            {
+                name: "whizfile.com",
+                links: [
+                    {
+                        icon: "globe",
+                        href: "https://www.whizfile.com/send",
+                    },
+                    {
+                        icon: "github",
+                        href: "https://github.com/munozarturo/whizfile.com",
+                    },
+                ],
+                technologies: ["AWS S3", "React", "NextJS"],
+                dates: "Nov. 2023 - Dec. 2023",
+                responsibilities: [
+                    "A web application for sending and receiving file transfers.",
                 ],
             },
             {
