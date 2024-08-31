@@ -122,9 +122,8 @@ export default defineEventHandler(async (event) => {
                 dates: "May 2024 – Aug 2024",
                 location: "Remote",
                 responsibilities: [
-                    "Maintain an Apache Airflow cloud data pipeline serving over 500,000 users per month",
+                    "Maintained an Apache Airflow cloud data pipeline serving over 500,000 monthly users",
                     "Developed a RAG (Retrieval-Augmented Generation) chatbot for premium users built on the company's knowledge base",
-                    "Resolve diverse technical challenges across multiple projects, improving developer and user experience",
                 ],
             },
             {
@@ -133,9 +132,8 @@ export default defineEventHandler(async (event) => {
                 dates: "May 2022 – May 2023",
                 location: "Mexico City, MX",
                 responsibilities: [
-                    "Engineered a framework for the development and back-testing of trading algorithms",
-                    "Refined high-frequency trading algorithms for varying risk tolerance levels leading to enhanced trade accuracy and profitability",
-                    "Built and deployed a real-time trading system using Python3 and InteractiveBrokers WebSocket API",
+                    "Engineered a framework for developing, back-testing, and deploying trading algorithms using Python3",
+                    "Refined high-frequency trading algorithms for varying risk tolerance levels",
                 ],
             },
             {
@@ -144,20 +142,20 @@ export default defineEventHandler(async (event) => {
                 dates: "May 2023 – May 2024",
                 location: "Cleveland, OH",
                 responsibilities: [
-                    "Utilized a ticketing system to resolve over 100 IT issues, serving as the first point of contact for faculty, staff, and students",
-                    "Developed documentation for specific recurring issues, leading to a 13% decrease in ticket resolution time",
-                    "Collaborated with vendors to resolve hardware issues and secure replacement parts",
+                    "Utilized a ticketing system to resolve over 100 IT issues, serving as the first point of contact for tech support",
+                    "Developed documentation for recurring issues leading to a 13% decrease in resolution time",
                 ],
             },
         ],
         skills: {
             programmingLanguages: [
-                "Python (3.6+)",
+                "Python",
                 "TypeScript",
-                "JavaScript (ES6+)",
+                "Java",
+                "JavaScript",
                 "SQL",
             ],
-            frameworks: ["Vue", "NuxtJS 3+", "React", "NextJS 13+"],
+            frameworks: ["Vue", "NuxtJS", "React", "NextJS"],
             technologies: ["Airflow", "AWS (SDK, SES, S3, Lambda)", "Figma"],
             languages: [
                 "English (Native)",
@@ -181,9 +179,7 @@ export default defineEventHandler(async (event) => {
                 technologies: ["Python"],
                 dates: "Jul. 2024",
                 responsibilities: [
-                    "Developed a context manager for handling HTTP requests with built-in logging and retry handling",
-                    "Improved developer experience and efficiency in the company's data pipeline, potentially saving hundreds of hours",
-                    "Implemented features to enhance request handling in large-scale web scraping operations",
+                    "Developed a context manager for handling HTTP requests for large scale web-scraping operations",
                 ],
             },
             {
@@ -201,9 +197,7 @@ export default defineEventHandler(async (event) => {
                 technologies: ["NuxtJS", "TypeScript", "PostgreSQL", "AWS SES"],
                 dates: "Jun. 2024",
                 responsibilities: [
-                    "Implemented a complete authentication system from scratch using NuxtJS 3 and TypeScript",
-                    "Developed features including REST HTTP API, email notifications, and password resets",
-                    "Integrated PostgreSQL for data storage and AWS SES for email functionality",
+                    "Implemented authentication over HTTP from scratch",
                 ],
             },
             {
@@ -211,9 +205,7 @@ export default defineEventHandler(async (event) => {
                 dates: "May 2023 – Aug. 2023",
                 technologies: [],
                 responsibilities: [
-                    "Managed all aspects of the business, including product sourcing, inventory management, and customer service",
-                    "Generated $30,000+ in sales (Q3 2023)",
-                    "Achieved a 98.7% customer satisfaction rating based on feedback from over 1000 sales transactions",
+                    "Generated $30,000+ in sales with a 98.7% customer satisfaction rating from over 1000 sales",
                 ],
             },
         ],
@@ -223,8 +215,6 @@ export default defineEventHandler(async (event) => {
                 dates: "Aug. 2023 – Present",
                 responsibilities: [
                     "Acting as a mentor in the Collegiate Connections Peer Mentoring Program, focusing on supporting first year underrepresented ELP, POSSE, and international students at CWRU",
-                    "Conducting weekly one-on-one sessions to provide academic guidance in major-specific areas",
-                    "Collaborating with a team of 141 members and officers to improve program effectiveness",
                 ],
             },
         ],
