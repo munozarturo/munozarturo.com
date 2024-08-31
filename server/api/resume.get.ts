@@ -100,7 +100,7 @@ export default defineEventHandler(async (event) => {
             {
                 institution: "Case Western Reserve University (CWRU)",
                 dates: "Aug. 2022 – May 2026",
-                degree: "B.Sc. Computer Science (3.76 GPA); Minors: Mathematics, Business Management",
+                degree: "B.Sc. Computer Science (3.71 GPA); Minors: Mathematics, Business Management",
                 location: "Cleveland, OH",
                 courses: [
                     "Algorithms",
