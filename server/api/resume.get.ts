@@ -105,9 +105,11 @@ export default defineEventHandler(async (event) => {
                 courses: [
                     "Algorithms",
                     "Data Structures",
-                    "Full Stack Web Development",
+                    "Full Stack Web Dev",
                     "Software Engineering",
                     "Databases",
+                    "Intro to AI",
+                    "Computer Security",
                     "Linear Algebra",
                     "Probability",
                     "Discrete Math",
