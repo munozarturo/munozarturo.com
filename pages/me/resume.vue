@@ -156,7 +156,7 @@
                                 v-if="project.technologies.length > 0"
                                 class="hidden sm:block"
                             >
-                                &nbsp;|
+                                &nbsp;|&nbsp;
                             </p>
                             <p>
                                 {{ project.technologies.join(", ") }}
