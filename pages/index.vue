@@ -10,9 +10,23 @@
         <div class="text-xl md:first-letter:text-2xl pl-2">
             My name is Arturo Muñoz, I am a college student completing my
             Bachelor's Degree in Computer Science and this is a digital catalog
-            of <a href="/me" class="font-semibold underline">me</a>, my
-            <a href="/blog" class="font-semibold underline">thoughts</a> and my
-            <a href="/projects" class="font-semibold underline">projects</a>.
+            of
+            <a
+                href="/me"
+                class="p-1 pt-0.5 hover:bg-background-secondary transition-colors duration-200 rounded-sm font-semibold underline"
+                >me</a
+            >, my
+            <a
+                href="/blog"
+                class="p-1 pt-0.5 hover:bg-background-secondary transition-colors duration-200 rounded-sm font-semibold underline"
+                >thoughts</a
+            >
+            and my
+            <a
+                href="/projects"
+                class="p-1 pt-0.5 hover:bg-background-secondary transition-colors duration-200 rounded-sm font-semibold underline"
+                >projects</a
+            >.
         </div>
         <div
             class="pl-4 space-x-4 w-full flex flex-row items-center justify-start"
