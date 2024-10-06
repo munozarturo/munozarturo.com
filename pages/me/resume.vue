@@ -65,6 +65,16 @@
                                 </p>
                             </span>
                         </li>
+                        <li>
+                            <span class="flex flex-row">
+                                <p>
+                                    <span class="font-bold">
+                                        Certificates:
+                                    </span>
+                                    &nbsp;{{ edu.certificates.join(", ") }}
+                                </p>
+                            </span>
+                        </li>
                     </ul>
                 </div>
             </section>
