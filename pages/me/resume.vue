@@ -80,6 +80,12 @@
             </section>
 
             <section>
+                <h2 class="text-lg sm:text-xl font-bold">Mission Statement</h2>
+                <hr class="border-t border-highlight" />
+                <p class="text-md mt-2">{{ resume.missionStatement }}</p>
+            </section>
+
+            <section>
                 <h2 class="text-lg sm:text-xl font-bold">Experience</h2>
                 <hr class="border-t border-highlight" />
                 <div v-for="exp in resume.experience">

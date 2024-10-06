@@ -53,6 +53,7 @@ export default defineEventHandler(async (event) => {
         title: string;
         links: ResumeLink[];
         education: EducationItem[];
+        missionStatement: string;
         experience: ExperienceItem[];
         skills: SkillSet;
         projects: ProjectItem[];
@@ -100,7 +101,7 @@ export default defineEventHandler(async (event) => {
         education: [
             {
                 institution: "Case Western Reserve University (CWRU)",
-                dates: "Aug. 2022 -- May 2026",
+                dates: "Aug. 2022 — May 2026",
                 degree: "B.Sc. Computer Science (3.71 GPA); Minors: Mathematics, Business Management",
                 location: "Cleveland, OH",
                 courses: [
@@ -118,11 +119,13 @@ export default defineEventHandler(async (event) => {
                 certificates: ["LFD121: Developing Secure Software"],
             },
         ],
+        missionStatement:
+            "Engineer by training, maker by nature — Transforming ideas into impact through fearless problem-solving and relentless learning.",
         experience: [
             {
                 company: "The Block",
                 title: "Data Engineering Intern",
-                dates: "May 2024 -- Aug 2024",
+                dates: "May 2024 — Aug 2024",
                 location: "Remote",
                 responsibilities: [
                     "Maintained an Apache Airflow cloud data pipeline serving over 500,000 monthly users",
@@ -132,7 +135,7 @@ export default defineEventHandler(async (event) => {
             {
                 company: "20 Minute Trader",
                 title: "Software Engineering Intern",
-                dates: "May 2022 -- May 2023",
+                dates: "May 2022 — May 2023",
                 location: "Mexico City, MX",
                 responsibilities: [
                     "Engineered a framework for developing, back-testing, and deploying trading algorithms using Python3",
@@ -142,7 +145,7 @@ export default defineEventHandler(async (event) => {
             {
                 company: "CWRU University Technology Services",
                 title: "Endpoint Support Specialist",
-                dates: "May 2023 -- May 2024",
+                dates: "May 2023 — May 2024",
                 location: "Cleveland, OH",
                 responsibilities: [
                     "Utilized a ticketing system to resolve over 100 IT issues, serving as the first point of contact for tech support",
@@ -251,7 +254,7 @@ export default defineEventHandler(async (event) => {
                     },
                 ],
                 technologies: ["AWS S3", "React", "NextJS"],
-                dates: "Nov. 2023 - Dec. 2023",
+                dates: "Nov. 2023 — Dec. 2023",
                 responsibilities: [
                     "A web application for sending and receiving file transfers",
                 ],
@@ -260,14 +263,14 @@ export default defineEventHandler(async (event) => {
         community: [
             {
                 title: "Systems Biology Club Risk Manager",
-                dates: "May. 2024 -- Present",
+                dates: "May. 2024 — Present",
                 responsibilities: [
                     "Manage risk assessment for 3 annual events, implementing safety measures for over 100 participants",
                 ],
             },
             {
                 title: "Collegiate Connections Mentor",
-                dates: "Aug. 2023 -- Present",
+                dates: "Aug. 2023 — Present",
                 responsibilities: [
                     "Mentor focusing on supporting 20 first year underrepresented and international students at CWRU",
                 ],
