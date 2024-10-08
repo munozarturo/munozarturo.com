@@ -43,12 +43,6 @@
             </div>
 
             <section>
-                <h2 class="text-lg sm:text-xl font-bold">Mission Statement</h2>
-                <hr class="border-t border-highlight" />
-                <p class="text-md mt-2">{{ resume.missionStatement }}</p>
-            </section>
-
-            <section>
                 <h2 class="text-lg sm:text-xl font-bold">Education</h2>
                 <hr class="border-t border-highlight" />
                 <div v-for="edu in resume.education" class="text-md">
@@ -80,6 +74,32 @@
                                     &nbsp;{{ edu.certificates.join(", ") }}
                                 </p>
                             </span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="text-lg sm:text-xl font-bold">Mission Statement</h2>
+                <hr class="border-t border-highlight" />
+                <p class="text-md mt-2">{{ resume.missionStatement }}</p>
+            </section>
+
+            <section>
+                <h2 class="text-lg sm:text-xl font-bold">Experience</h2>
+                <hr class="border-t border-highlight" />
+                <div v-for="exp in resume.experience">
+                    <span class="flex flex-col sm:flex-row justify-between">
+                        <h3 class="font-bold">{{ exp.company }}</h3>
+                        <p class="font-bold">{{ exp.dates }}</p></span
+                    >
+                    <span class="flex flex-col sm:flex-row justify-between">
+                        <p class="italic">{{ exp.title }}</p>
+                        <p>{{ exp.location }}</p>
+                    </span>
+                    <ul class="list-disc pl-4 sm:pl-6 md:pl-8">
+                        <li v-for="responsibility in exp.responsibilities">
+                            {{ responsibility }}
                         </li>
                     </ul>
                 </div>
@@ -119,26 +139,6 @@
                         </p>
                     </li>
                 </ul>
-            </section>
-
-            <section>
-                <h2 class="text-lg sm:text-xl font-bold">Experience</h2>
-                <hr class="border-t border-highlight" />
-                <div v-for="exp in resume.experience">
-                    <span class="flex flex-col sm:flex-row justify-between">
-                        <h3 class="font-bold">{{ exp.company }}</h3>
-                        <p class="font-bold">{{ exp.dates }}</p></span
-                    >
-                    <span class="flex flex-col sm:flex-row justify-between">
-                        <p class="italic">{{ exp.title }}</p>
-                        <p>{{ exp.location }}</p>
-                    </span>
-                    <ul class="list-disc pl-4 sm:pl-6 md:pl-8">
-                        <li v-for="responsibility in exp.responsibilities">
-                            {{ responsibility }}
-                        </li>
-                    </ul>
-                </div>
             </section>
 
             <section>
