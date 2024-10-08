@@ -43,6 +43,12 @@
             </div>
 
             <section>
+                <h2 class="text-lg sm:text-xl font-bold">Mission Statement</h2>
+                <hr class="border-t border-highlight" />
+                <p class="text-md mt-2">{{ resume.missionStatement }}</p>
+            </section>
+
+            <section>
                 <h2 class="text-lg sm:text-xl font-bold">Education</h2>
                 <hr class="border-t border-highlight" />
                 <div v-for="edu in resume.education" class="text-md">
@@ -77,12 +83,6 @@
                         </li>
                     </ul>
                 </div>
-            </section>
-
-            <section>
-                <h2 class="text-lg sm:text-xl font-bold">Mission Statement</h2>
-                <hr class="border-t border-highlight" />
-                <p class="text-md mt-2">{{ resume.missionStatement }}</p>
             </section>
 
             <section>
